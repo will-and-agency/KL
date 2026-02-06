@@ -1,0 +1,26 @@
+/* This only applies when printing or saving as PDF */
+@media print {
+    /* 1. Hide the sidebar completely */
+    #sidebar {
+        display: none !important;
+    }
+
+    /* 2. Remove the margin from the main page so it fills the whole PDF */
+    main {
+        margin-left: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    /* 3. Hide the interactive buttons (PDF, Filters, Theme Toggle) 
+          since they don't work on paper */
+    #theme-toggle, #btn-pdf, button {
+        display: none !important;
+    }
+    
+    /* 4. Ensure the background is white for the PDF */
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+}

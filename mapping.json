@@ -1,0 +1,54 @@
+{
+    "randers": {
+        "folder": "D:/W&A/KL/data/randers/Energy Projects",
+        "roi_data": {
+            "file": "Forbedringer.xlsx",
+            "sheet": "Forbedringer",
+            "skiprows": 1,
+            "columns": {
+                "x": "Investering",
+                "y": "Besparelse", 
+                "size": "Besparelse.2",
+                "color": "Type",
+                "label": "Bygninger"
+            }
+        },
+        "building_data": {
+            "file": "Bygninger.xlsx",
+            "sheet": "Bygninger",
+            "skiprows": 1,
+            "columns": {
+                "age": "Opførelsesår",
+                "label": "Energimærke",
+                "area": "Opvarmet areal (m²)"
+            }
+        }
+    },
+    "faaborg": {
+        "folder": "D:/W&A/KL/data/faaborg&midtfyn",
+        "db2_energy": {
+            "file": "Forbrugsoplysninger FM.xlsx",
+            "skiprows": 4,
+            "target_row_label": "Graddagskorrigeret"
+        },
+        "db5_procurement": {
+            "file": "Vedligeholdelsesplaner 2024.xlsx",
+            "sheet": "Priskatalog",
+            "skiprows": 0
+        },
+        "db6_ventilation": {
+            "file": "Ventilation registrering.xlsx",
+            "skiprows": 0
+        }
+    },
+    "frederiksberg": {
+        "folder": "data/frederiksberg",
+        "files": {
+            "maintenance": "Skolen på duevej vedligeholdelsesplan.xlsx",
+            "projects": "Forbedringer energimærker skolen på duevej.xlsx",
+            "info": "Bygningsinfo - Dalux.xlsx",
+            "compliance": "Oplysninger bygninger skolen på duevej.xlsx",
+            "consumption": "Forbrug skolen på duevej 2024.xlsx"
+        }
+    }
+}

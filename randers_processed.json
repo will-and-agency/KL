@@ -1,0 +1,6508 @@
+{
+    "map_points": [
+        {
+            "name": "Børnehaven Essenbækken",
+            "address": "Dybdalvej 3",
+            "lat": 56.449179,
+            "lon": 10.166677,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Fårup Skole og Børneby",
+            "address": "Bakkevænget 6",
+            "lat": 56.544051,
+            "lon": 9.854255,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Fårup Skole og Børneby",
+            "address": "Bakkevænget 6",
+            "lat": 56.544051,
+            "lon": 9.854255,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Fårup Skole og Børneby",
+            "address": "Bakkevænget 6",
+            "lat": 56.544051,
+            "lon": 9.854255,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Fårup Skole og Børneby",
+            "address": "Bakkevænget 6",
+            "lat": 56.544051,
+            "lon": 9.854255,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rusmiddelcenter Randers",
+            "address": "Gl. Hadsundvej 1",
+            "lat": 56.465287,
+            "lon": 10.038365,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Ladegården",
+            "address": "Marienborgvej 8",
+            "lat": 56.471995,
+            "lon": 10.045171,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "DSI Ladegården",
+            "address": "Marienborgvej 8",
+            "lat": 56.471995,
+            "lon": 10.045171,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "DSI Ladegården",
+            "address": "Marienborgvej 8",
+            "lat": 56.471995,
+            "lon": 10.045171,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Ladegården",
+            "address": "Marienborgvej 8",
+            "lat": 56.471995,
+            "lon": 10.045171,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehaven Svalebo",
+            "address": "Svalevej 19",
+            "lat": 56.443214,
+            "lon": 10.155902,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Svalebo",
+            "address": "Svalevej 19",
+            "lat": 56.443214,
+            "lon": 10.155902,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Svalebo",
+            "address": "Svalevej 19",
+            "lat": 56.443214,
+            "lon": 10.155902,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Paderuphus",
+            "address": "Paderuplundvej 4",
+            "lat": 56.431382,
+            "lon": 10.070716,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Birkebo",
+            "address": "Viborgvej 98B",
+            "lat": 56.466335,
+            "lon": 10.001566,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Toftegaard",
+            "address": "Skolevej 22",
+            "lat": 56.444019,
+            "lon": 10.168839,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Toftegaard",
+            "address": "Skolevej 22",
+            "lat": 56.444019,
+            "lon": 10.168839,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Toftegaard",
+            "address": "Skolevej 22",
+            "lat": 56.444019,
+            "lon": 10.168839,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Toftegaard",
+            "address": "Skolevej 22",
+            "lat": 56.444019,
+            "lon": 10.168839,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Svaleparken",
+            "address": "Svalevej 17",
+            "lat": 56.442744,
+            "lon": 10.155891,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Svaleparken",
+            "address": "Svalevej 17",
+            "lat": 56.442744,
+            "lon": 10.155891,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Botilbud Holbergstien",
+            "address": "Holbergstien 6",
+            "lat": 56.469069,
+            "lon": 10.044455,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Solstrålen",
+            "address": "Bakkevænget 2",
+            "lat": 56.543267,
+            "lon": 9.851499,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Solstrålen",
+            "address": "Bakkevænget 2",
+            "lat": 56.543267,
+            "lon": 9.851499,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Solstrålen",
+            "address": "Bakkevænget 2",
+            "lat": 56.543267,
+            "lon": 9.851499,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Solstrålen",
+            "address": "Bakkevænget 2",
+            "lat": 56.543267,
+            "lon": 9.851499,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Støvringgårdvej",
+            "address": "Støvringgårdvej 37",
+            "lat": 56.51733,
+            "lon": 10.209842,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Støvringgårdvej",
+            "address": "Støvringgårdvej 37",
+            "lat": 56.51733,
+            "lon": 10.209842,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Specialindsats for Børn & Unge – Mellerup",
+            "address": "Birkestien 8",
+            "lat": 56.521692,
+            "lon": 10.206583,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Specialindsats for Børn & Unge – Mellerup",
+            "address": "Birkestien 8",
+            "lat": 56.521692,
+            "lon": 10.206583,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Specialindsats for Børn & Unge – Mellerup",
+            "address": "Birkestien 8",
+            "lat": 56.521692,
+            "lon": 10.206583,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Spentrup Ældrecenter",
+            "address": "Præstevænget 2",
+            "lat": 56.539241,
+            "lon": 10.035054,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Terneparken",
+            "address": "Ternevej 8",
+            "lat": 56.548753,
+            "lon": 9.930254,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Terneparken",
+            "address": "Ternevej 8",
+            "lat": 56.548753,
+            "lon": 9.930254,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Terneparken",
+            "address": "Ternevej 8",
+            "lat": 56.548753,
+            "lon": 9.930254,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Terneparken",
+            "address": "Ternevej 8",
+            "lat": 56.548753,
+            "lon": 9.930254,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Harridslev",
+            "address": "Kastanievej 20",
+            "lat": 56.499049,
+            "lon": 10.127368,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Harridslev",
+            "address": "Kastanievej 20",
+            "lat": 56.499049,
+            "lon": 10.127368,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Gassum",
+            "address": "Østervænget 15",
+            "lat": 56.576958,
+            "lon": 10.000012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kollektivhuset",
+            "address": "Viborgvej 98D",
+            "lat": 56.465923,
+            "lon": 10.00024,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Skovdalen",
+            "address": "Høvejen 18",
+            "lat": 56.447268,
+            "lon": 10.031336,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Møllebo",
+            "address": "Infanterivej 35",
+            "lat": 56.480678,
+            "lon": 10.034012,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hobrovejens Skole",
+            "address": "Gethersvej 36",
+            "lat": 56.466859,
+            "lon": 10.023232,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Åbakken",
+            "address": "Bakkevænget 1H",
+            "lat": 56.583417,
+            "lon": 10.182434,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Borup Byvej",
+            "address": "Borup Byvej 14",
+            "lat": 56.503279,
+            "lon": 9.964769,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vuggestuen Firkløveren",
+            "address": "Spindervej 11",
+            "lat": 56.468319,
+            "lon": 10.03721,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vuggestuen Firkløveren",
+            "address": "Spindervej 11",
+            "lat": 56.468319,
+            "lon": 10.03721,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Randers Naturcenter",
+            "address": "Brusgårdsvej 8",
+            "lat": 56.408863,
+            "lon": 10.113825,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Lindehuset",
+            "address": "Slyngborggade 8",
+            "lat": 56.462591,
+            "lon": 10.030875,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Lindehuset",
+            "address": "Slyngborggade 8",
+            "lat": 56.462591,
+            "lon": 10.030875,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Lindehuset",
+            "address": "Slyngborggade 8",
+            "lat": 56.462591,
+            "lon": 10.030875,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Stevnstrup",
+            "address": "Bymarksvej 16",
+            "lat": 56.434693,
+            "lon": 9.936854,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Tøjhushavens Børnehus",
+            "address": "Krusesgade 2",
+            "lat": 56.462646,
+            "lon": 10.043616,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "DSI Kristrup Vuggestue",
+            "address": "Vennelystvej 60",
+            "lat": 56.445258,
+            "lon": 10.059864,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Himmeldalen",
+            "address": "Torupdalvej 11",
+            "lat": 56.479555,
+            "lon": 10.089754,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kastaniebo",
+            "address": "Kastanievej 3A",
+            "lat": 56.500537,
+            "lon": 10.130742,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kastaniebo",
+            "address": "Kastanievej 3A",
+            "lat": 56.500537,
+            "lon": 10.130742,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Rismøllen",
+            "address": "Rismøllegade 10",
+            "lat": 56.474602,
+            "lon": 10.068296,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Rismøllen",
+            "address": "Rismøllegade 10",
+            "lat": 56.474602,
+            "lon": 10.068296,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Støttecenter Vester Tværvej",
+            "address": "Vester Tværvej 11",
+            "lat": 56.464511,
+            "lon": 10.001518,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Støttecenter Vester Tværvej",
+            "address": "Vester Tværvej 11",
+            "lat": 56.464511,
+            "lon": 10.001518,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Støttecenter Vester Tværvej",
+            "address": "Vester Tværvej 11",
+            "lat": 56.464511,
+            "lon": 10.001518,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Støttecenter Vester Tværvej",
+            "address": "Vester Tværvej 11",
+            "lat": 56.464511,
+            "lon": 10.001518,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Støttecenter Vester Tværvej",
+            "address": "Vester Tværvej 11",
+            "lat": 56.464511,
+            "lon": 10.001518,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bakkegården",
+            "address": "Lodsejervej 2",
+            "lat": 56.468338,
+            "lon": 10.042035,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Huset Nyvang",
+            "address": "Rindsvej 6D",
+            "lat": 56.475296,
+            "lon": 10.023564,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bakkegården",
+            "address": "Lodsejervej 2",
+            "lat": 56.468338,
+            "lon": 10.042035,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "DSI Kirkens Korshærs",
+            "address": "Slotsgården 5",
+            "lat": 56.460949,
+            "lon": 10.040324,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "DSI Kirkens Korshærs",
+            "address": "Slotsgården 5",
+            "lat": 56.460949,
+            "lon": 10.040324,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Gudenådalen",
+            "address": "Stavnagervej 2D",
+            "lat": 56.431908,
+            "lon": 9.949639,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Kirkens Korshærs",
+            "address": "Slotsgården 5",
+            "lat": 56.460949,
+            "lon": 10.040324,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Kirkens Korshærs",
+            "address": "Slotsgården 5",
+            "lat": 56.460949,
+            "lon": 10.040324,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Terneparken",
+            "address": "Ternevej 8",
+            "lat": 56.548753,
+            "lon": 9.930254,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vestervangsskolen",
+            "address": "Nålemagervej 114",
+            "lat": 56.473245,
+            "lon": 10.008144,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Æblehaven",
+            "address": "Myrdalsvej 1A",
+            "lat": 56.462763,
+            "lon": 9.976284,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Perron 4",
+            "address": "Jernbanegade 4D",
+            "lat": 56.460485,
+            "lon": 10.029162,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "DSI Kristrup Børnehus",
+            "address": "R. Hougårds Vej 44A",
+            "lat": 56.441606,
+            "lon": 10.056844,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bo-og aktivitetscenter Marienborgvej",
+            "address": "Marienborgvej 17A",
+            "lat": 56.47437,
+            "lon": 10.044112,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bo-og aktivitetscenter Marienborgvej",
+            "address": "Marienborgvej 17A",
+            "lat": 56.47437,
+            "lon": 10.044112,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bo-og aktivitetscenter Marienborgvej",
+            "address": "Marienborgvej 17A",
+            "lat": 56.47437,
+            "lon": 10.044112,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Blicherskolen",
+            "address": "Haldvej 6",
+            "lat": 56.541264,
+            "lon": 10.037093,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Hallen",
+            "address": "H.C. Andersens Vej 9",
+            "lat": 56.461176,
+            "lon": 9.970525,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Hallen",
+            "address": "H.C. Andersens Vej 9",
+            "lat": 56.461176,
+            "lon": 9.970525,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Hallen",
+            "address": "H.C. Andersens Vej 9",
+            "lat": 56.461176,
+            "lon": 9.970525,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Hallen",
+            "address": "H.C. Andersens Vej 9",
+            "lat": 56.461176,
+            "lon": 9.970525,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Stjernehuset",
+            "address": "Enghøj Alle 1",
+            "lat": 56.485995,
+            "lon": 9.995799,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Stjernehuset",
+            "address": "Enghøj Alle 1",
+            "lat": 56.485995,
+            "lon": 9.995799,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Kombi",
+            "address": "Romalt Boulevard 29",
+            "lat": 56.448011,
+            "lon": 10.088494,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Lindevænget",
+            "address": "Søren Møllers Gade 37",
+            "lat": 56.462429,
+            "lon": 10.025505,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Lindevænget",
+            "address": "Søren Møllers Gade 37",
+            "lat": 56.462429,
+            "lon": 10.025505,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Lindevænget",
+            "address": "Søren Møllers Gade 37",
+            "lat": 56.462429,
+            "lon": 10.025505,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Lindevænget",
+            "address": "Søren Møllers Gade 37",
+            "lat": 56.462429,
+            "lon": 10.025505,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Lindevænget",
+            "address": "Søren Møllers Gade 37",
+            "lat": 56.462429,
+            "lon": 10.025505,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalen",
+            "address": "R. Hougårds Vej 42A",
+            "lat": 56.441267,
+            "lon": 10.056882,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrup Skole",
+            "address": "Skolegade 4",
+            "lat": 56.445956,
+            "lon": 10.056948,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Madservice Kronjylland",
+            "address": "Falstersvej 2",
+            "lat": 56.424887,
+            "lon": 10.044171,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Madservice Kronjylland",
+            "address": "Falstersvej 2",
+            "lat": 56.424887,
+            "lon": 10.044171,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Madservice Kronjylland",
+            "address": "Falstersvej 2",
+            "lat": 56.424887,
+            "lon": 10.044171,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Nørrevangsskolen",
+            "address": "Glentevej 15",
+            "lat": 56.476892,
+            "lon": 10.037643,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Spentrup Ældrecenter",
+            "address": "Præstevænget 2",
+            "lat": 56.539241,
+            "lon": 10.035054,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Neptunvej",
+            "address": "Neptunvej 4",
+            "lat": 56.425476,
+            "lon": 10.061617,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Thors Bakke",
+            "address": "Møllegade 4",
+            "lat": 56.463521,
+            "lon": 10.036791,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Randers Sundhedscenter",
+            "address": "Biografgade 1A",
+            "lat": 56.46322,
+            "lon": 10.037656,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Midgaard",
+            "address": "Vedøvej 5",
+            "lat": 56.468508,
+            "lon": 10.0591,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Troldhøj",
+            "address": "Gemsevej 1",
+            "lat": 56.446848,
+            "lon": 10.076602,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Troldhøj",
+            "address": "Gemsevej 1",
+            "lat": 56.446848,
+            "lon": 10.076602,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Troldhøj",
+            "address": "Gemsevej 1",
+            "lat": 56.446848,
+            "lon": 10.076602,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Troldhøj",
+            "address": "Gemsevej 1",
+            "lat": 56.446848,
+            "lon": 10.076602,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bostedet Høvejen",
+            "address": "Høvejen 23",
+            "lat": 56.447175,
+            "lon": 10.029549,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bostedet Høvejen",
+            "address": "Høvejen 23",
+            "lat": 56.447175,
+            "lon": 10.029549,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Psykiatriens Hus",
+            "address": "Gl. Hadsundvej 3",
+            "lat": 56.465961,
+            "lon": 10.039357,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Rusmiddelcenter Randers",
+            "address": "Gl. Hadsundvej 1",
+            "lat": 56.465287,
+            "lon": 10.038365,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Rusmiddelcenter Randers",
+            "address": "Gl. Hadsundvej 1",
+            "lat": 56.465287,
+            "lon": 10.038365,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Kulturhuset",
+            "address": "Stemannsgade 2",
+            "lat": 56.460458,
+            "lon": 10.040943,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Laksetorvet",
+            "address": "Lille Rosengård 16",
+            "lat": 56.45753,
+            "lon": 10.036547,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Ålykke",
+            "address": "Hvidemøllevej 45",
+            "lat": 56.46377,
+            "lon": 10.000979,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Søndermarkskolen",
+            "address": "Skanderborggade 65F",
+            "lat": 56.437978,
+            "lon": 10.043086,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Assentoftskolen",
+            "address": "Skolevej 20",
+            "lat": 56.444601,
+            "lon": 10.164201,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Borupvænget",
+            "address": "Gl. Hobrovej 142",
+            "lat": 56.483197,
+            "lon": 10.006346,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Harridslev",
+            "address": "Kastanievej 20",
+            "lat": 56.499049,
+            "lon": 10.127368,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Harridslev",
+            "address": "Kastanievej 20",
+            "lat": 56.499049,
+            "lon": 10.127368,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Harridslev",
+            "address": "Kastanievej 20",
+            "lat": 56.499049,
+            "lon": 10.127368,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Purhushallen",
+            "address": "Bakkevænget 12",
+            "lat": 56.544381,
+            "lon": 9.856679,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Purhushallen",
+            "address": "Bakkevænget 12",
+            "lat": 56.544381,
+            "lon": 9.856679,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Purhushallen",
+            "address": "Bakkevænget 12",
+            "lat": 56.544381,
+            "lon": 9.856679,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "CBR",
+            "address": "Ydervangen 1",
+            "lat": 56.485285,
+            "lon": 10.024605,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Langå Skole",
+            "address": "Vennevej 6",
+            "lat": 56.400934,
+            "lon": 9.901113,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Toftegaard",
+            "address": "Skolevej 22",
+            "lat": 56.444019,
+            "lon": 10.168839,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehaven Lucernevej",
+            "address": "Lucernevej 61",
+            "lat": 56.483559,
+            "lon": 10.020271,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Havndal Skole og Børneby",
+            "address": "Søringen 3",
+            "lat": 56.653866,
+            "lon": 10.202271,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Materielgården Randers",
+            "address": "Gudenåvej 2",
+            "lat": 56.460663,
+            "lon": 10.021751,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Grøftekanten",
+            "address": "Tønagervej 13",
+            "lat": 56.588024,
+            "lon": 10.135649,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Korshøjskolen",
+            "address": "Skolevænget 1",
+            "lat": 56.498588,
+            "lon": 10.134222,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Overvænget",
+            "address": "Overvænget 27",
+            "lat": 56.464527,
+            "lon": 9.965536,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Overvænget",
+            "address": "Overvænget 27",
+            "lat": 56.464527,
+            "lon": 9.965536,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Overvænget",
+            "address": "Overvænget 27",
+            "lat": 56.464527,
+            "lon": 9.965536,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Spentrup Ældrecenter",
+            "address": "Præstevænget 2",
+            "lat": 56.539241,
+            "lon": 10.035054,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Spentrup Ældrecenter",
+            "address": "Præstevænget 2",
+            "lat": 56.539241,
+            "lon": 10.035054,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Spentrup Ældrecenter",
+            "address": "Præstevænget 2",
+            "lat": 56.539241,
+            "lon": 10.035054,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Overvænget",
+            "address": "Overvænget 27",
+            "lat": 56.464527,
+            "lon": 9.965536,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Overvænget",
+            "address": "Overvænget 27",
+            "lat": 56.464527,
+            "lon": 9.965536,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hjernecenter Randers",
+            "address": "Bakkevej 1",
+            "lat": 56.389283,
+            "lon": 9.895616,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hjernecenter Randers",
+            "address": "Bakkevej 1",
+            "lat": 56.389283,
+            "lon": 9.895616,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hjernecenter Randers",
+            "address": "Bakkevej 1",
+            "lat": 56.389283,
+            "lon": 9.895616,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Hjernecenter Randers",
+            "address": "Bakkevej 1",
+            "lat": 56.389283,
+            "lon": 9.895616,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rosenvænget",
+            "address": "P. Knudsens Vej 6A",
+            "lat": 56.467605,
+            "lon": 10.049552,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Svaleparken",
+            "address": "Svalevej 17",
+            "lat": 56.442744,
+            "lon": 10.155891,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Rismølleskolen",
+            "address": "Rismøllegade 15F",
+            "lat": 56.475009,
+            "lon": 10.066979,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Østervangsskolen",
+            "address": "Dronningborg Boulevard 33G",
+            "lat": 56.473605,
+            "lon": 10.050322,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregravshallen",
+            "address": "Blishønevej 33",
+            "lat": 56.483288,
+            "lon": 9.90577,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregravshallen",
+            "address": "Blishønevej 33",
+            "lat": 56.483288,
+            "lon": 9.90577,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Vorup Plejehjem",
+            "address": "Bøsbrovej 68",
+            "lat": 56.443844,
+            "lon": 10.035704,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Trekløverskolen, Blommevej",
+            "address": "Blommevej 50",
+            "lat": 56.492238,
+            "lon": 10.053687,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Børnehuset Bjerregrav",
+            "address": "Åkandevej 6",
+            "lat": 56.484322,
+            "lon": 9.905697,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Landsbyen Møllevang",
+            "address": "Garnisonsvej 6",
+            "lat": 56.482822,
+            "lon": 10.039851,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Områdecenter Dronningborg",
+            "address": "Egholmsvej 4",
+            "lat": 56.471209,
+            "lon": 10.062616,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Områdecenter Dronningborg",
+            "address": "Egholmsvej 4",
+            "lat": 56.471209,
+            "lon": 10.062616,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Kristrupcentret",
+            "address": "Byvænget 12",
+            "lat": 56.445973,
+            "lon": 10.059187,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Tirsdalens Skole",
+            "address": "R. Hougårds Vej 50E",
+            "lat": 56.438181,
+            "lon": 10.062022,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bocenter Harridslev",
+            "address": "Purager 5",
+            "lat": 56.49457,
+            "lon": 10.125903,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Hallen",
+            "address": "H.C. Andersens Vej 9",
+            "lat": 56.461176,
+            "lon": 9.970525,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Hornbæk Skole",
+            "address": "H.C. Andersens Vej 1",
+            "lat": 56.461467,
+            "lon": 9.97008,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Ældrecentret Kildevang",
+            "address": "Randersvej 23A",
+            "lat": 56.397045,
+            "lon": 9.896949,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Aktivitetscenter Randers",
+            "address": "Stenaltvej 1",
+            "lat": 56.473895,
+            "lon": 10.071052,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
+            "name": "Aktivitetscenter Randers",
+            "address": "Stenaltvej 1",
+            "lat": 56.473895,
+            "lon": 10.071052,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Aktivitetscenter Randers",
+            "address": "Stenaltvej 1",
+            "lat": 56.473895,
+            "lon": 10.071052,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Aktivitetscenter Randers",
+            "address": "Stenaltvej 1",
+            "lat": 56.473895,
+            "lon": 10.071052,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Stevnstrup Stadion",
+            "address": "Stationsvej 34B",
+            "lat": 56.431498,
+            "lon": 9.953586,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Bjerregrav Ældrecenter",
+            "address": "Violvej 1",
+            "lat": 56.473188,
+            "lon": 10.030464,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Bjerregrav Ældrecenter",
+            "address": "Violvej 1",
+            "lat": 56.473188,
+            "lon": 10.030464,
+            "color": "orange",
+            "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Lervangen",
+            "address": "Lervangen 43E",
+            "lat": 56.475853,
+            "lon": 10.029773,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Lervangen",
+            "address": "Lervangen 43E",
+            "lat": 56.475853,
+            "lon": 10.029773,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Asferg skole",
+            "address": "Østergade 2",
+            "lat": 56.461397,
+            "lon": 10.040159,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Børnehuset Rismøllen",
+            "address": "Rismøllegade 10",
+            "lat": 56.474602,
+            "lon": 10.068296,
+            "color": "green",
+            "status": "Ukendt"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        },
+        {
+            "name": "Munkholmskolen",
+            "address": "Bymarksvej 18",
+            "lat": 56.434777,
+            "lon": 9.935234,
+            "color": "green",
+            "status": "Grøn"
+        }
+    ]
+}
