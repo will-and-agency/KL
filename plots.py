@@ -120,21 +120,25 @@ def build_trend_chart_from_data(fig_detail, years, actual_values, target_value, 
             hovertemplate='Mål: %{y:.1f} kWh/m²<extra></extra>'
         ))
 
-        # Add shaded gap area
+        # Add shaded gap area (red if inefficient, green if efficient)
+        avg_gap = np.mean([a - target_value for a in actual_values])
+        is_inefficient = avg_gap > 0
+        gap_fill = 'rgba(239, 68, 68, 0.2)' if is_inefficient else 'rgba(16, 185, 129, 0.2)'
+        gap_label = 'Ineffektivitets-gap' if is_inefficient else 'Effektivitets-gevinst'
+
         fig_detail.add_trace(go.Scatter(
             x=years + years[::-1],
             y=actual_values + target_line[::-1],
             fill='toself',
-            fillcolor='rgba(239, 68, 68, 0.2)',
+            fillcolor=gap_fill,
             line=dict(color='rgba(0,0,0,0)'),
-            name='Ineffektivitets-gap',
+            name=gap_label,
             hoverinfo='skip',
             showlegend=True
         ))
 
-        avg_gap = np.mean([a - target_value for a in actual_values])
         gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh/m²"
-        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+        gap_color = "#ef4444" if is_inefficient else "#10b981"
 
     fig_detail.update_layout(
         title=dict(text=f"Forbrugsudvikling: {selected_address}", font=dict(size=14)),
@@ -300,19 +304,64 @@ def create_building_characteristics(muni_key, is_dark_mode=False):
             "G": "#be1e2d"       # Dark red
         }
 
-        fig = px.histogram(
-            df,
-            x=cols["age"],
-            color=cols["label"],
-            category_orders={cols["label"]: ["A2020", "A2015", "A2010", "B", "C", "D", "E", "F", "G"]},
-            color_discrete_map=energy_colors,
-            labels={cols["age"]: "Opførelsesår", cols["label"]: "Energimærke"},
-            template="plotly_dark" if is_dark_mode else "plotly_white",
-            barmode="stack",
-            nbins=30
+        # Pick address column for hover info
+        addr_col = 'Adresse' if 'Adresse' in df.columns else (
+            'Bygningsnavn' if 'Bygningsnavn' in df.columns else None
         )
 
+        # Pre-compute bins matching nbins=30 so we can attach addresses per bin
+        age_min = df[cols["age"]].min()
+        age_max = df[cols["age"]].max()
+        bin_edges = np.linspace(age_min, age_max, 31)  # 30 bins = 31 edges
+        bin_centers = [(bin_edges[i] + bin_edges[i+1]) / 2 for i in range(30)]
+        df['_bin'] = pd.cut(df[cols["age"]], bins=bin_edges, include_lowest=True, labels=range(30))
+
+        label_order = ["A2020", "A2015", "A2010", "B", "C", "D", "E", "F", "G"]
+        fig = go.Figure()
+
+        for label in label_order:
+            df_label = df[df[cols["label"]] == label]
+            if df_label.empty:
+                continue
+
+            counts = []
+            addr_texts = []
+
+            for i in range(30):
+                df_bin = df_label[df_label['_bin'] == i]
+                count = len(df_bin)
+                counts.append(count)
+
+                if count > 0 and addr_col:
+                    addresses = df_bin[addr_col].dropna().astype(str).tolist()
+                    cleaned = [a.split(',')[0].strip() for a in addresses]
+                    display = cleaned[:15]
+                    addr_text = "<br>".join(display)
+                    if len(cleaned) > 15:
+                        addr_text += f"<br>... +{len(cleaned) - 15} mere"
+                    addr_texts.append(addr_text)
+                else:
+                    addr_texts.append("")
+
+            fig.add_trace(go.Bar(
+                x=bin_centers,
+                y=counts,
+                name=label,
+                marker_color=energy_colors.get(label, "#999"),
+                width=(bin_edges[1] - bin_edges[0]),
+                customdata=addr_texts,
+                hovertemplate=(
+                    "<b>Energimærke: " + label + "</b><br>"
+                    "Opførelsesår: %{x:.0f}<br>"
+                    "Antal: %{y}<br>"
+                    "<br><b>Adresser:</b><br>%{customdata}"
+                    "<extra></extra>"
+                )
+            ))
+
         fig.update_layout(
+            barmode='stack',
+            bargap=0.05,
             margin=dict(l=50, r=20, t=40, b=50),
             paper_bgcolor='rgba(0,0,0,0)',
             plot_bgcolor='rgba(0,0,0,0)',
@@ -325,7 +374,8 @@ def create_building_characteristics(muni_key, is_dark_mode=False):
                 y=-0.25,
                 xanchor="center",
                 x=0.5
-            )
+            ),
+            template="plotly_dark" if is_dark_mode else "plotly_white"
         )
         return fig
     except Exception as e:
@@ -553,21 +603,25 @@ def create_faaborg_energy_performance(muni_key, is_dark_mode=False, selected_add
                             hovertemplate='Mål %{x}: %{y:.1f} kWh<extra></extra>'
                         ))
 
-                        # Add shaded gap area
+                        # Add shaded gap area (red if inefficient, green if efficient)
+                        avg_gap = np.mean([a - t for a, t in zip(actual_values, target_values)])
+                        is_inefficient = avg_gap > 0
+                        gap_fill = 'rgba(239, 68, 68, 0.2)' if is_inefficient else 'rgba(16, 185, 129, 0.2)'
+                        gap_label = 'Ineffektivitets-gap' if is_inefficient else 'Effektivitets-gevinst'
+
                         fig_detail.add_trace(go.Scatter(
                             x=years + years[::-1],
                             y=actual_values + target_values[::-1],
                             fill='toself',
-                            fillcolor='rgba(239, 68, 68, 0.2)',
+                            fillcolor=gap_fill,
                             line=dict(color='rgba(0,0,0,0)'),
-                            name='Ineffektivitets-gap',
+                            name=gap_label,
                             hoverinfo='skip',
                             showlegend=True
                         ))
 
-                        avg_gap = np.mean([a - t for a, t in zip(actual_values, target_values)])
                         gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh"
-                        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+                        gap_color = "#ef4444" if is_inefficient else "#10b981"
                         has_target = True
 
                     elif target_from_overview and pd.notna(target_from_overview):
@@ -583,21 +637,25 @@ def create_faaborg_energy_performance(muni_key, is_dark_mode=False, selected_add
                             hovertemplate='Mål: %{y:.1f} kWh/m²<extra></extra>'
                         ))
 
-                        # Add shaded gap area
+                        # Add shaded gap area (red if inefficient, green if efficient)
+                        avg_gap = np.mean([a - target_from_overview for a in actual_values])
+                        is_inefficient = avg_gap > 0
+                        gap_fill = 'rgba(239, 68, 68, 0.2)' if is_inefficient else 'rgba(16, 185, 129, 0.2)'
+                        gap_label = 'Ineffektivitets-gap' if is_inefficient else 'Effektivitets-gevinst'
+
                         fig_detail.add_trace(go.Scatter(
                             x=years + years[::-1],
                             y=actual_values + target_line[::-1],
                             fill='toself',
-                            fillcolor='rgba(239, 68, 68, 0.2)',
+                            fillcolor=gap_fill,
                             line=dict(color='rgba(0,0,0,0)'),
-                            name='Ineffektivitets-gap',
+                            name=gap_label,
                             hoverinfo='skip',
                             showlegend=True
                         ))
 
-                        avg_gap = np.mean([a - target_from_overview for a in actual_values])
                         gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh"
-                        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+                        gap_color = "#ef4444" if is_inefficient else "#10b981"
                         has_target = True
 
                     fig_detail.update_layout(
@@ -788,7 +846,7 @@ def create_faaborg_ventilation_peaks(muni_key, is_dark_mode=False):
             xaxis_title="Måned",
             yaxis_title="Antal Filterskift",
             showlegend=False,
-            margin=dict(t=60, r=80),
+            margin=dict(t=60, r=150),
             xaxis=dict(tickangle=-45)
         )
         return fig

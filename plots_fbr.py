@@ -37,6 +37,9 @@ def create_frb_maintenance_budget(is_dark_mode=False):
             barmode="stack"
         )
 
+        # Remove gap lines between stacked segments
+        fig.update_traces(marker_line_width=0, selector=dict(type="bar"))
+
         # Add cumulative line
         fig.add_trace(go.Scatter(
             x=cumulative.index,
@@ -260,7 +263,7 @@ def create_frb_property_characteristics(is_dark_mode=False):
         title=dict(text="Besparelsespotentiale (%) efter Bygningskarakteristika", font=dict(size=16)),
         template=template,
         showlegend=False,
-        height=400,
+        height=450,
         margin=dict(t=80, b=50, l=50, r=30)
     )
 
