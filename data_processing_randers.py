@@ -61,7 +61,7 @@ def process_randers_map_data(timesafe_txt_path, buildings_xlsx_path):
                     location = geolocator.geocode(full_query)
                     if location:
                         status = str(ts_row.get('ENHED_TILSTAND', 'Grøn'))
-                        color = 'red' if 'Rød' in status else 'orange' if 'Gul' in status else 'green'
+                        color = 'red' if 'Rød' in status else 'orange' if 'Gul' in status else 'gray' if 'Ukendt' in status else 'green'
                         
                         map_results.append({
                             "name": loc_name,

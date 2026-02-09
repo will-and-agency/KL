@@ -101,7 +101,7 @@ def create_frb_project_scatter(is_dark_mode=False):
     fig = px.scatter(
         df, x="DDK", y="CO2", color="Type",
         hover_name="Description",
-        title="DDK vs CO2 Reduktion per Projekt",
+        title="DKK vs CO2 Reduktion per Projekt",
         labels={"DDK": "Investering (DKK)", "CO2": "CO2 Reduktion (Tons/år)"},
         template="plotly_dark" if is_dark_mode else "plotly_white"
     )

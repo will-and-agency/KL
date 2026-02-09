@@ -1053,7 +1053,7 @@
             "address": "Skolegade 4",
             "lat": 56.445956,
             "lon": 10.056948,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -1063,6 +1063,14 @@
             "lon": 10.125903,
             "color": "orange",
             "status": "Gul"
+        },
+        {
+            "name": "Børnehuset Solstrålen",
+            "address": "Bakkevænget 2",
+            "lat": 56.543267,
+            "lon": 9.851499,
+            "color": "red",
+            "status": "Rød"
         },
         {
             "name": "Børnehuset Solstrålen",
@@ -1341,7 +1349,7 @@
             "address": "P. Knudsens Vej 6A",
             "lat": 56.467605,
             "lon": 10.049552,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -1677,7 +1685,7 @@
             "address": "Dronningborg Boulevard 33G",
             "lat": 56.473605,
             "lon": 10.050322,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -1701,24 +1709,8 @@
             "address": "Dronningborg Boulevard 33G",
             "lat": 56.473605,
             "lon": 10.050322,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
-            "color": "green",
-            "status": "Grøn"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
-            "color": "green",
-            "status": "Grøn"
         },
         {
             "name": "Østervangsskolen",
@@ -1837,30 +1829,6 @@
             "address": "Dronningborg Boulevard 33G",
             "lat": 56.473605,
             "lon": 10.050322,
-            "color": "orange",
-            "status": "Gul"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
-            "color": "orange",
-            "status": "Gul"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
-            "color": "green",
-            "status": "Grøn"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
             "color": "green",
             "status": "Grøn"
         },
@@ -1871,14 +1839,6 @@
             "lon": 10.024605,
             "color": "red",
             "status": "Rød"
-        },
-        {
-            "name": "Østervangsskolen",
-            "address": "Dronningborg Boulevard 33G",
-            "lat": 56.473605,
-            "lon": 10.050322,
-            "color": "green",
-            "status": "Grøn"
         },
         {
             "name": "CBR",
@@ -1933,7 +1893,7 @@
             "address": "Dronningborg Boulevard 33G",
             "lat": 56.473605,
             "lon": 10.050322,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2045,15 +2005,7 @@
             "address": "Ydervangen 1",
             "lat": 56.485285,
             "lon": 10.024605,
-            "color": "red",
-            "status": "Rød"
-        },
-        {
-            "name": "CBR",
-            "address": "Ydervangen 1",
-            "lat": 56.485285,
-            "lon": 10.024605,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2061,7 +2013,7 @@
             "address": "Ydervangen 1",
             "lat": 56.485285,
             "lon": 10.024605,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2069,15 +2021,7 @@
             "address": "Ydervangen 1",
             "lat": 56.485285,
             "lon": 10.024605,
-            "color": "green",
-            "status": "Ukendt"
-        },
-        {
-            "name": "CBR",
-            "address": "Ydervangen 1",
-            "lat": 56.485285,
-            "lon": 10.024605,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2309,7 +2253,7 @@
             "address": "Vennevej 6",
             "lat": 56.400934,
             "lon": 9.901113,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2317,7 +2261,7 @@
             "address": "Vennevej 6",
             "lat": 56.400934,
             "lon": 9.901113,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -2421,14 +2365,6 @@
             "address": "Skanderborggade 65F",
             "lat": 56.437978,
             "lon": 10.043086,
-            "color": "green",
-            "status": "Grøn"
-        },
-        {
-            "name": "Søndermarkskolen",
-            "address": "Skanderborggade 65F",
-            "lat": 56.437978,
-            "lon": 10.043086,
             "color": "red",
             "status": "Rød"
         },
@@ -2519,22 +2455,6 @@
             "lon": 10.043086,
             "color": "orange",
             "status": "Gul"
-        },
-        {
-            "name": "Søndermarkskolen",
-            "address": "Skanderborggade 65F",
-            "lat": 56.437978,
-            "lon": 10.043086,
-            "color": "orange",
-            "status": "Gul"
-        },
-        {
-            "name": "Søndermarkskolen",
-            "address": "Skanderborggade 65F",
-            "lat": 56.437978,
-            "lon": 10.043086,
-            "color": "green",
-            "status": "Grøn"
         },
         {
             "name": "Søndermarkskolen",
@@ -2701,22 +2621,6 @@
             "address": "Bakkevænget 1H",
             "lat": 56.583417,
             "lon": 10.182434,
-            "color": "red",
-            "status": "Rød"
-        },
-        {
-            "name": "Åbakken",
-            "address": "Bakkevænget 1H",
-            "lat": 56.583417,
-            "lon": 10.182434,
-            "color": "orange",
-            "status": "Gul"
-        },
-        {
-            "name": "Åbakken",
-            "address": "Bakkevænget 1H",
-            "lat": 56.583417,
-            "lon": 10.182434,
             "color": "orange",
             "status": "Gul"
         },
@@ -2749,40 +2653,8 @@
             "address": "Bakkevænget 1H",
             "lat": 56.583417,
             "lon": 10.182434,
-            "color": "green",
-            "status": "Grøn"
-        },
-        {
-            "name": "Åbakken",
-            "address": "Bakkevænget 1H",
-            "lat": 56.583417,
-            "lon": 10.182434,
-            "color": "green",
-            "status": "Grøn"
-        },
-        {
-            "name": "Åbakken",
-            "address": "Bakkevænget 1H",
-            "lat": 56.583417,
-            "lon": 10.182434,
             "color": "red",
             "status": "Rød"
-        },
-        {
-            "name": "Trekløverskolen, Borup Byvej",
-            "address": "Borup Byvej 14",
-            "lat": 56.503279,
-            "lon": 9.964769,
-            "color": "red",
-            "status": "Rød"
-        },
-        {
-            "name": "Trekløverskolen, Borup Byvej",
-            "address": "Borup Byvej 14",
-            "lat": 56.503279,
-            "lon": 9.964769,
-            "color": "orange",
-            "status": "Gul"
         },
         {
             "name": "Trekløverskolen, Borup Byvej",
@@ -4059,8 +3931,8 @@
         {
             "name": "Terneparken",
             "address": "Ternevej 8",
-            "lat": 56.548753,
-            "lon": 9.930254,
+            "lat": 56.435483,
+            "lon": 9.949961,
             "color": "red",
             "status": "Rød"
         },
@@ -5013,7 +4885,7 @@
             "address": "Gl. Hadsundvej 3",
             "lat": 56.465961,
             "lon": 10.039357,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -5045,7 +4917,7 @@
             "address": "Gl. Hadsundvej 3",
             "lat": 56.465961,
             "lon": 10.039357,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -5053,7 +4925,7 @@
             "address": "Gl. Hadsundvej 3",
             "lat": 56.465961,
             "lon": 10.039357,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -5061,7 +4933,7 @@
             "address": "Gl. Hadsundvej 3",
             "lat": 56.465961,
             "lon": 10.039357,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -5317,7 +5189,7 @@
             "address": "Gl. Hobrovej 142",
             "lat": 56.483197,
             "lon": 10.006346,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {
@@ -5867,32 +5739,32 @@
         {
             "name": "Hjernecenter Randers",
             "address": "Bakkevej 1",
-            "lat": 56.389283,
-            "lon": 9.895616,
+            "lat": 56.440594,
+            "lon": 10.137039,
             "color": "red",
             "status": "Rød"
         },
         {
             "name": "Hjernecenter Randers",
             "address": "Bakkevej 1",
-            "lat": 56.389283,
-            "lon": 9.895616,
+            "lat": 56.440594,
+            "lon": 10.137039,
             "color": "red",
             "status": "Rød"
         },
         {
             "name": "Hjernecenter Randers",
             "address": "Bakkevej 1",
-            "lat": 56.389283,
-            "lon": 9.895616,
+            "lat": 56.440594,
+            "lon": 10.137039,
             "color": "red",
             "status": "Rød"
         },
         {
             "name": "Hjernecenter Randers",
             "address": "Bakkevej 1",
-            "lat": 56.389283,
-            "lon": 9.895616,
+            "lat": 56.440594,
+            "lon": 10.137039,
             "color": "red",
             "status": "Rød"
         },
@@ -6241,6 +6113,14 @@
             "status": "Rød"
         },
         {
+            "name": "Bjerregrav Skole",
+            "address": "Over Fussingvej 7C",
+            "lat": 56.483997,
+            "lon": 9.904253,
+            "color": "red",
+            "status": "Rød"
+        },
+        {
             "name": "Børnehuset Bjerregrav",
             "address": "Åkandevej 6",
             "lat": 56.484322,
@@ -6485,7 +6365,7 @@
             "address": "Rismøllegade 10",
             "lat": 56.474602,
             "lon": 10.068296,
-            "color": "green",
+            "color": "gray",
             "status": "Ukendt"
         },
         {

@@ -399,14 +399,44 @@ def create_randers_map(is_dark_mode=False):
             tiles="cartodbpositron" if not is_dark_mode else "cartodbdark_matter"
         )
 
-        # Create marker cluster for better performance
+        # Custom JS: cluster icon color = worst child marker color
+        worst_color_js = """
+        function(cluster) {
+            var markers = cluster.getAllChildMarkers();
+            var worst = 0;
+            for (var i = 0; i < markers.length; i++) {
+                var c = markers[i].options.fillColor || '';
+                if (c === 'red') { worst = 2; break; }
+                else if (c === 'orange' && worst < 1) { worst = 1; }
+                // gray (ukendt) stays at 0, same as green
+            }
+            var bg = worst === 2 ? 'rgba(239,68,68,0.7)' :
+                     worst === 1 ? 'rgba(245,158,11,0.7)' :
+                                   'rgba(16,185,129,0.7)';
+            var border = worst === 2 ? '#dc2626' :
+                         worst === 1 ? '#d97706' :
+                                       '#059669';
+            var count = cluster.getChildCount();
+            return new L.DivIcon({
+                html: '<div style="background:' + bg + ';border:2px solid ' + border +
+                      ';border-radius:50%;width:40px;height:40px;display:flex;' +
+                      'align-items:center;justify-content:center;color:#fff;' +
+                      'font-weight:bold;font-size:13px;">' + count + '</div>',
+                className: '',
+                iconSize: new L.Point(40, 40)
+            });
+        }
+        """
+
+        # Create marker cluster with worst-color logic
         marker_cluster = MarkerCluster(
             name="Bygninger",
             options={
                 'spiderfyOnMaxZoom': True,
                 'showCoverageOnHover': False,
                 'maxClusterRadius': 50
-            }
+            },
+            icon_create_function=worst_color_js
         ).add_to(m)
 
         # Track unique statuses for legend
