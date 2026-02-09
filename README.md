@@ -42,7 +42,7 @@ conda activate kl_env
 The application requires a specific folder structure to locate Excel and CSV files correctly. Ensure your local data/ directory matches this layout exactly:
 
 ```plaintext
-root/
+KL/
 ├── data/
 │   ├── faaborg&midtfyn/
 │   │   ├── DKV.xlsx - Uglen - Forbrug 2022-24.csv
@@ -62,7 +62,14 @@ root/
 ├── faaborg_carbon_data.json
 ├── frb_processed.json
 ├── randers_processed.json
-└── mapping.json
+├── mapping.json
+├── data_processing_fbr.py
+├── data_processing_randers.py
+├── data_processing.py
+├── environment.yaml
+├── plots_fbr.py
+├── plots.py
+└── README.md
 ```
 [!IMPORTANT]
 
