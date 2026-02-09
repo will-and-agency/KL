@@ -86,23 +86,24 @@ python app.py
 ```
 ## 🧩 Codebase Structure
 
-File                        | Folder,Description
-app.py                      | "Entry Point. The main Dash application file. Defines layout, routing, and callbacks."
-data_processing.py          | Data cleaning/transformation for Faaborg-Midtfyn and shared utilities.
-data_processing_fbr.py      | Data processing logic for Frederiksberg.
-data_processing_randers.py  | Data processing logic for Randers.
-plots.py                    | Plotly figure generation for Faaborg-Midtfyn.
-plots_fbr.py                | Plotly figure generation for Frederiksberg.
-analysis_generator.py       | Generates text-based insights and summary components.
-assets/                     | "Static files (CSS, JS) automatically served by Dash."
+| File                        | Folder,Description                                                                     |
+| --------------------------- | -------------------------------------------------------------------------------------- |
+| app.py                      | "Entry Point. The main Dash application file. Defines layout, routing, and callbacks." |
+| data_processing.py          | Data cleaning/transformation for Faaborg-Midtfyn and shared utilities.                 |
+| data_processing_fbr.py      | Data processing logic for Frederiksberg.                                               |
+| data_processing_randers.py  | Data processing logic for Randers.                                                     |
+| plots.py                    | Plotly figure generation for Faaborg-Midtfyn.                                          |
+| plots_fbr.py                | Plotly figure generation for Frederiksberg.                                            |
+| analysis_generator.py       | Generates text-based insights and summary components.                                  |
+| assets/                     | "Static files (CSS, JS) automatically served by Dash."                                 |
 
 
 ## 🛠 Troubleshooting
-* ** ModuleNotFoundError **: You likely forgot to activate the virtual environment or install requirements.txt.
+* **ModuleNotFoundError**: You likely forgot to activate the virtual environment or install requirements.txt.
 
-* ** FileNotFoundError **: Check the data/ folder. The folder names (faaborg&midtfyn, frederiksberg, randers) must match exactly, including casing.
+* **FileNotFoundError**: Check the data/ folder. The folder names (faaborg&midtfyn, frederiksberg, randers) must match exactly, including casing.
 
-* ** Empty Graphs **: This often happens if the input CSV format has changed (e.g., column headers renamed), causing the data processor to filter out all rows.
+* **Empty Graphs**: This often happens if the input CSV format has changed (e.g., column headers renamed), causing the data processor to filter out all rows.
 View in Browser: Open http://127.0.0.1:8050/ in your web browser.
 
 🧩 Codebase StructureFile / FolderDescriptionapp.pyEntry Point. The main Dash application file. Defines layout, routing, and callbacks.data_processing.pyData cleaning/transformation for Faaborg-Midtfyn and shared utilities.data_processing_fbr.pyData processing logic for Frederiksberg.data_processing_randers.pyData processing logic for Randers.plots.pyPlotly figure generation for Faaborg-Midtfyn.plots_fbr.pyPlotly figure generation for Frederiksberg.analysis_generator.pyGenerates text-based insights and summary components.assets/Static files (CSS, JS) automatically served by Dash.
