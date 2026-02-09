@@ -19,6 +19,7 @@ Follow these steps to set up the project on your local machine.
 Ensure you have the following installed:
 * **Python 3.10+** (Check with `python --version`)
 * **Git** (Check with `git --version`)
+* Ensure you have **Anaconda** or **Miniconda** installed.
 
 ### 2. Clone the Repository
 Open your terminal or command prompt and run:
@@ -28,22 +29,13 @@ git clone <repository_url>
 cd <repository_folder_name>
 ```
 ### 3. Environment Setup
-It is highly recommended to use a virtual environment to manage dependencies.
+This project uses a pre-defined Anaconda environment. To set it up, open your Anaconda Prompt or terminal and run:
 Windows:
 ```bash
-python -m venv venv
-.\venv\Scripts\activate
-```
-macOS / Linux:
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-### 4. Install Dependencies
-This project uses a requirements.txt file to manage packages.
+conda env create -f environment.yml
 
-```bash
-pip install -r requirements.txt
+# Activate the environment
+conda activate kl_env
 ```
 
 ## 📂 Data Structure
