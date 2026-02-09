@@ -7,14 +7,8 @@ def process_frederiksberg_data(folder_path, file_map):
     proj_path = os.path.join(folder_path, file_map["projects"])
     
     # --- A. PROCESS VEDLIGEHOLDELSE (D1 & D7) ---
-    df_raw_m = pd.read_excel(maint_path, header=None)
-    header_row_m = 0
-    for i, row in df_raw_m.head(10).iterrows():
-        if '2023' in [str(x) for x in row.values]:
-            header_row_m = i
-            break
-            
-    df_m = pd.read_excel(maint_path, header=header_row_m)
+    # Row 1 = headers, Row 2 = useless, Row 3+ = data
+    df_m = pd.read_excel(maint_path, header=0, skiprows=[1])
     df_m.columns = [str(c).strip() for c in df_m.columns]
     
     target_years = [str(year) for year in range(2023, 2034)]
@@ -50,13 +44,14 @@ def process_frederiksberg_data(folder_path, file_map):
         ddk = pd.to_numeric(row.get("Investering", 0), errors='coerce')
         co2 = pd.to_numeric(row.get("Besparelse", 0), errors='coerce')
         tbt = pd.to_numeric(row.get("TBT", 0), errors='coerce')
-        emne = str(row.get("Emne", "Diverse"))
-        forslag = str(row.get("Forslag", "Ingen beskrivelse"))
+        emne = str(row.get("Type", "Diverse"))
+        forslag = str(row.get("Titel", "Ingen titel"))
+        bygning = str(row.get("Bygninger","Ingen bygning navn"))
         
         if ddk > 0:
             project_results.append({
                 "Type": emne,
-                "Description": forslag,
+                "Description": bygning+": "+forslag,
                 "DDK": float(ddk),
                 "CO2": float(co2),
                 "TBT": float(tbt)

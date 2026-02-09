@@ -6,6 +6,7 @@ import os
 import traceback
 import plotly.graph_objects as go
 from data_processing_fbr import *
+from plotly.subplots import make_subplots
 
 
 ## Dashboard 1
@@ -146,6 +147,8 @@ def create_frb_project_scatter(is_dark_mode=False):
 ## Dashboard 3
 
 def create_frb_property_characteristics(is_dark_mode=False):
+    
+
     with open('frb_processed.json', 'r', encoding='utf-8') as f:
         data = json.load(f).get("compliance", [])
 
@@ -153,48 +156,124 @@ def create_frb_property_characteristics(is_dark_mode=False):
     if df.empty:
         return go.Figure().add_annotation(text="Ingen data fundet. Kør Sync.", showarrow=False)
 
-    # Filtering out zero values to see where the real potential is
-    df_filtered = df[df['SavingPct'] > 0]
+    # Filter out zero/invalid values
+    df = df[(df['SavingPct'] > 0) & (df['Area'] > 0) & (df['Year'] > 1800)]
 
-    if df_filtered.empty:
+    if df.empty:
         return go.Figure().add_annotation(text="Ingen besparelsespotentiale fundet.", showarrow=False)
 
-    # Group by Year for the X-axis
-    df_plot = df_filtered.groupby('Year')['SavingPct'].mean().reset_index()
-    df_plot = df_plot.sort_values('Year')
+    template = "plotly_dark" if is_dark_mode else "plotly_white"
 
-    # Calculate average and find peak year
-    avg_saving = df_plot['SavingPct'].mean()
-    peak_year = df_plot.loc[df_plot['SavingPct'].idxmax(), 'Year']
-    peak_value = df_plot['SavingPct'].max()
-
-    fig = px.bar(
-        df_plot, x="Year", y="SavingPct",
-        title=f"Besparelsespotentiale pr. Byggeår (Højest: {int(peak_year)})",
-        labels={"SavingPct": "Gns. Besparelse %", "Year": "Opførelsesår"},
-        template="plotly_dark" if is_dark_mode else "plotly_white",
-        color="SavingPct",
-        color_continuous_scale="RdYlGn",  # Red-Yellow-Green makes more sense for savings
-        text_auto='.1f'
+    # Create subplots: 1 row, 3 columns
+    fig = make_subplots(
+        rows=1, cols=3,
+        subplot_titles=("Areal (m²)", "Energimærke", "Byggeår"),
+        horizontal_spacing=0.08
     )
 
-    # Add average line
-    fig.add_hline(
-        y=avg_saving,
-        line_dash="dash",
-        line_color="#3b82f6",
-        annotation_text=f"Gennemsnit: {avg_saving:.1f}%",
-        annotation_position="right"
+    # --- Chart 1: Area (m²) vs Saving % ---
+    # Create area bins for grouping
+    df['AreaBin'] = pd.cut(df['Area'], bins=[0, 500, 1000, 2000, 5000, float('inf')],
+                           labels=['<500', '500-1000', '1000-2000', '2000-5000', '>5000'])
+    area_grouped = df.groupby('AreaBin', observed=True).agg({
+        'SavingPct': 'mean',
+        'Building': lambda x: list(x),
+        'Area': 'count'
+    }).reset_index()
+    area_grouped.columns = ['AreaBin', 'SavingPct', 'Buildings', 'Count']
+
+    # Create hover text with building names (max 5)
+    area_hover = []
+    for _, row in area_grouped.iterrows():
+        buildings = row['Buildings'][:5]
+        more = f"<br>+{len(row['Buildings']) - 5} flere..." if len(row['Buildings']) > 5 else ""
+        area_hover.append(f"<b>Areal: {row['AreaBin']} m²</b><br>Gns. besparelse: {row['SavingPct']:.1f}%<br>Antal: {row['Count']}<br><br><b>Bygninger:</b><br>" + "<br>".join(buildings) + more)
+
+    fig.add_trace(
+        go.Bar(x=area_grouped['AreaBin'].astype(str), y=area_grouped['SavingPct'],
+               marker_color='#3b82f6', name='m²',
+               text=[f'{v:.1f}%' for v in area_grouped['SavingPct']], textposition='outside',
+               hovertext=area_hover, hoverinfo='text'),
+        row=1, col=1
     )
 
-    fig.update_traces(textposition='outside', texttemplate='%{y:.1f}%')
+    # --- Chart 2: Energy Mark vs Saving % ---
+    energy_order = ['A2020', 'A2015', 'A2010', 'A', 'B', 'C', 'D', 'E', 'F', 'G']
+    df['EnergyMark'] = pd.Categorical(df['EnergyMark'], categories=energy_order, ordered=True)
+    energy_grouped = df.groupby('EnergyMark', observed=True).agg({
+        'SavingPct': 'mean',
+        'Building': lambda x: list(x),
+        'Area': 'count'
+    }).reset_index()
+    energy_grouped.columns = ['EnergyMark', 'SavingPct', 'Buildings', 'Count']
+    energy_grouped = energy_grouped.sort_values('EnergyMark')
 
+    # Create hover text
+    energy_hover = []
+    for _, row in energy_grouped.iterrows():
+        buildings = row['Buildings'][:5]
+        more = f"<br>+{len(row['Buildings']) - 5} flere..." if len(row['Buildings']) > 5 else ""
+        energy_hover.append(f"<b>Energimærke: {row['EnergyMark']}</b><br>Gns. besparelse: {row['SavingPct']:.1f}%<br>Antal: {row['Count']}<br><br><b>Bygninger:</b><br>" + "<br>".join(buildings) + more)
+
+    # Color based on energy label (green=good, red=bad)
+    energy_colors = {'A2020': '#00a651', 'A2015': '#00a651', 'A2010': '#00a651', 'A': '#00a651',
+                     'B': '#50b848', 'C': '#b5d333', 'D': '#fff200', 'E': '#f7941d', 'F': '#ed1c24', 'G': '#be1e2d'}
+    colors = [energy_colors.get(m, '#94a3b8') for m in energy_grouped['EnergyMark']]
+
+    fig.add_trace(
+        go.Bar(x=energy_grouped['EnergyMark'].astype(str), y=energy_grouped['SavingPct'],
+               marker_color=colors, name='Energimærke',
+               text=[f'{v:.1f}%' for v in energy_grouped['SavingPct']], textposition='outside',
+               hovertext=energy_hover, hoverinfo='text'),
+        row=1, col=2
+    )
+
+    # --- Chart 3: Year vs Saving % ---
+    # Create decade bins
+    df['Decade'] = (df['Year'] // 10) * 10
+    year_grouped = df.groupby('Decade').agg({
+        'SavingPct': 'mean',
+        'Building': lambda x: list(x),
+        'Area': 'count'
+    }).reset_index()
+    year_grouped.columns = ['Decade', 'SavingPct', 'Buildings', 'Count']
+    year_grouped = year_grouped.sort_values('Decade')
+    year_grouped['DecadeLabel'] = year_grouped['Decade'].astype(int).astype(str) + 's'
+
+    # Create hover text
+    year_hover = []
+    for _, row in year_grouped.iterrows():
+        buildings = row['Buildings'][:5]
+        more = f"<br>+{len(row['Buildings']) - 5} flere..." if len(row['Buildings']) > 5 else ""
+        year_hover.append(f"<b>Årti: {row['DecadeLabel']}</b><br>Gns. besparelse: {row['SavingPct']:.1f}%<br>Antal: {row['Count']}<br><br><b>Bygninger:</b><br>" + "<br>".join(buildings) + more)
+
+    fig.add_trace(
+        go.Bar(x=year_grouped['DecadeLabel'], y=year_grouped['SavingPct'],
+               marker_color='#10b981', name='Byggeår',
+               text=[f'{v:.1f}%' for v in year_grouped['SavingPct']], textposition='outside',
+               hovertext=year_hover, hoverinfo='text'),
+        row=1, col=3
+    )
+
+    # Update layout
     fig.update_layout(
-        yaxis_ticksuffix="%",
-        margin=dict(t=80, b=50, l=50, r=80),
-        coloraxis_showscale=False,
-        xaxis=dict(type='category', categoryorder='category ascending')
+        title=dict(text="Besparelsespotentiale (%) efter Bygningskarakteristika", font=dict(size=16)),
+        template=template,
+        showlegend=False,
+        height=400,
+        margin=dict(t=80, b=50, l=50, r=30)
     )
+
+    # Update all y-axes
+    fig.update_yaxes(title_text="Besparelse %", ticksuffix="%", row=1, col=1)
+    fig.update_yaxes(ticksuffix="%", row=1, col=2)
+    fig.update_yaxes(ticksuffix="%", row=1, col=3)
+
+    # Update x-axes
+    fig.update_xaxes(title_text="m²", row=1, col=1)
+    fig.update_xaxes(title_text="Energimærke", row=1, col=2)
+    fig.update_xaxes(title_text="År", row=1, col=3)
+
     return fig
 
 ### Dashboard 7

@@ -26,15 +26,148 @@ def extract_address_base(address):
     return addr
 
 
-def find_matching_domutech_rows(df_domu, selected_address, addr_column='Kolonne1'):
+def clean_domutech_address(address):
+    """
+    Clean Domutech Address column by removing postal code and city suffix.
+    E.g., "Banegårdspladsen 4, 5600 Faaborg" -> "Banegårdspladsen 4"
+    """
+    addr = str(address).strip()
+    # Remove everything after the comma (postal code + city)
+    if ',' in addr:
+        addr = addr.split(',')[0].strip()
+    return addr
+
+
+def extract_from_energi_oversigt(df_ov, addr_row, selected_address):
+    """
+    Extract yearly kWh pr m2 data from Energi Oversigt sheet.
+    First tries 'kWh pr m2' columns, then calculates from Varme+El/m2.
+    Returns years list and actual_values list.
+    """
+    if addr_row is None or addr_row.empty:
+        return [], []
+
+    row = addr_row.iloc[0] if hasattr(addr_row, 'iloc') else addr_row
+    years = []
+    actual_values = []
+
+    # Get m2 for calculating consumption per m2
+    m2_col = next((c for c in df_ov.columns if str(c).lower().strip() == 'm2'), None)
+    m2_value = pd.to_numeric(row[m2_col], errors='coerce') if m2_col else None
+
+    for year in range(2019, 2026):
+        value_found = None
+
+        # First try: Look for "kWH pr m2" columns
+        for col in df_ov.columns:
+            col_lower = str(col).lower()
+            if 'kwh' in col_lower and 'pr m2' in col_lower.replace('.', '') and str(year) in str(col):
+                val = pd.to_numeric(row[col], errors='coerce')
+                if pd.notna(val) and val > 0:
+                    value_found = val
+                break
+
+        # Second try: Calculate from Varmeforbrug + Elforbrug / m2
+        if value_found is None and m2_value and m2_value > 0:
+            varme_col = next((c for c in df_ov.columns if 'varmeforbrug' in c.lower() and str(year) in c and 'kwh' in c.lower()), None)
+            el_col = next((c for c in df_ov.columns if 'elforbrug' in c.lower() and str(year) in c and 'kwh' in c.lower()), None)
+
+            varme = pd.to_numeric(row[varme_col], errors='coerce') if varme_col else 0
+            el = pd.to_numeric(row[el_col], errors='coerce') if el_col else 0
+
+            if pd.notna(varme) or pd.notna(el):
+                varme = varme if pd.notna(varme) else 0
+                el = el if pd.notna(el) else 0
+                total = varme + el
+                if total > 0:
+                    value_found = total / m2_value
+
+        if value_found is not None and value_found > 0:
+            years.append(str(year))
+            actual_values.append(value_found)
+
+    return years, actual_values
+
+
+def build_trend_chart_from_data(fig_detail, years, actual_values, target_value, selected_address, is_dark_mode):
+    """
+    Build the dual-line trend chart with actual vs target consumption.
+    """
+    # Add actual consumption line
+    fig_detail.add_trace(go.Scatter(
+        x=years,
+        y=actual_values,
+        mode='lines+markers',
+        name='Faktisk Forbrug',
+        line=dict(color='#3b82f6', width=3),
+        marker=dict(size=10),
+        hovertemplate='%{x}: %{y:.1f} kWh/m²<extra></extra>'
+    ))
+
+    gap_text = ""
+    gap_color = "#666"
+
+    # Add target line if available
+    if target_value and pd.notna(target_value):
+        target_line = [target_value] * len(years)
+
+        fig_detail.add_trace(go.Scatter(
+            x=years,
+            y=target_line,
+            mode='lines',
+            name=f'Energimærke ({target_value:.0f} kWh/m²)',
+            line=dict(color='#10b981', width=2, dash='dash'),
+            hovertemplate='Mål: %{y:.1f} kWh/m²<extra></extra>'
+        ))
+
+        # Add shaded gap area
+        fig_detail.add_trace(go.Scatter(
+            x=years + years[::-1],
+            y=actual_values + target_line[::-1],
+            fill='toself',
+            fillcolor='rgba(239, 68, 68, 0.2)',
+            line=dict(color='rgba(0,0,0,0)'),
+            name='Ineffektivitets-gap',
+            hoverinfo='skip',
+            showlegend=True
+        ))
+
+        avg_gap = np.mean([a - target_value for a in actual_values])
+        gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh/m²"
+        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+
+    fig_detail.update_layout(
+        title=dict(text=f"Forbrugsudvikling: {selected_address}", font=dict(size=14)),
+        template="plotly_dark" if is_dark_mode else "plotly_white",
+        xaxis_title="År",
+        yaxis_title="kWh pr. m²",
+        legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center"),
+        margin=dict(t=80, b=80),
+        hovermode='x unified',
+        annotations=[
+            dict(
+                text=gap_text,
+                xref="paper", yref="paper",
+                x=0.5, y=1.06,
+                showarrow=False,
+                font=dict(size=12, color=gap_color),
+                xanchor="center"
+            )
+        ] if gap_text else []
+    )
+
+
+def find_matching_domutech_rows(df_domu, selected_address, addr_column='Address'):
     """
     Find rows in Domutech data that match the selected address.
     Uses base address matching (street + number) for flexible matching.
     """
     selected_base = extract_address_base(selected_address)
 
-    # Create a column with base addresses for matching
-    domu_bases = df_domu[addr_column].apply(extract_address_base)
+    # Clean and extract base from Domutech addresses
+    domu_bases = df_domu[addr_column].apply(
+        lambda x: extract_address_base(clean_domutech_address(x))
+    )
 
     # Match rows where the base address matches
     mask = domu_bases == selected_base
@@ -286,7 +419,8 @@ def create_faaborg_energy_performance(muni_key, is_dark_mode=False, selected_add
         cfg = mapping[muni_key]["db2_energy"]
         file_path = os.path.join(mapping[muni_key]["folder"], cfg["file"])
 
-        df_ov = pd.read_excel(file_path, sheet_name='Energi Oversigt', skiprows=4)
+        # Headers are on row 0, no skiprows needed
+        df_ov = pd.read_excel(file_path, sheet_name='Energi Oversigt')
         df_ov.columns = [str(c).strip() for c in df_ov.columns]
         addr_col = df_ov.columns[0]
         df_ov[addr_col] = df_ov[addr_col].ffill()
@@ -348,49 +482,163 @@ def create_faaborg_energy_performance(muni_key, is_dark_mode=False, selected_add
             hovertemplate="<b>%{y}</b><br>Afvigelse: %{x:.2f}%<extra></extra>"
         )
 
-        # 2. LOAD DOMUTECH FOR DETAILS
-        df_domu = pd.read_excel(file_path, sheet_name='Beregnede forbrug Domutech')
-        df_domu.columns = [str(c).strip() for c in df_domu.columns]
-
+        # 2. BUILD DUAL-LINE CHART: Actual vs Target Consumption
         if not selected_address:
             selected_address = str(df_all.iloc[-1][addr_col])
 
-        # Use flexible base-address matching (street + number)
-        b_data = find_matching_domutech_rows(df_domu, selected_address, addr_column='Kolonne1')
-        
         fig_detail = go.Figure()
-        if not b_data.empty:
-            # Calculate total CO2
-            total_co2 = b_data['Yearly CO2Emission [ton]'].sum()
 
-            fig_detail = px.bar(
-                b_data,
-                x='Material',
-                y='Yearly CO2Emission [ton]',
-                color='Material',
-                title=f"CO2 Kilde: {selected_address}",
-                template="plotly_dark" if is_dark_mode else "plotly_white",
-                text_auto='.2f'
-            )
+        # Try to get target from Energi Oversigt (Energimærke kWh pr m2)
+        selected_base = extract_address_base(selected_address)
+        df_ov['_base'] = df_ov[addr_col].apply(lambda x: extract_address_base(str(x)))
+        addr_row = df_ov[df_ov['_base'] == selected_base]
 
-            # Hide legend (materials already shown on x-axis)
-            fig_detail.update_layout(
-                showlegend=False,
-                margin=dict(t=80),
-                # Add total CO2 as subtitle annotation
-                annotations=[
-                    dict(
-                        text=f"Total: {total_co2:.2f} ton CO2/år",
-                        xref="paper", yref="paper",
-                        x=0.5, y=1.08,
-                        showarrow=False,
-                        font=dict(size=14, color="#10b981"),
-                        xanchor="center"
+        target_from_overview = None
+        if not addr_row.empty:
+            # Look for Energimærke kWh pr m2 column (flexible matching for encoding)
+            target_col = None
+            for c in df_ov.columns:
+                c_lower = str(c).lower()
+                # Match "Energimærke kWh pr m2" but not "beregnede" columns
+                if ('energi' in c_lower and 'kwh' in c_lower and 'pr m2' in c_lower.replace('.', ' ')
+                    and 'beregn' not in c_lower and 'forbrug' not in c_lower):
+                    target_col = c
+                    break
+            if target_col:
+                target_from_overview = pd.to_numeric(addr_row.iloc[0][target_col], errors='coerce')
+
+        # Use existing data processing functions to get trend data
+        try:
+            # Get mapping of addresses to their individual sheets
+            sheet_map = get_faaborg_sheet_map(file_path)
+
+            # Find the matching sheet for selected address
+            matched_sheet = None
+
+            for addr, sheet in sheet_map.items():
+                if extract_address_base(addr) == selected_base:
+                    matched_sheet = sheet
+                    break
+
+            if matched_sheet:
+                # Extract trend data from the individual address sheet
+                years, actual_values, target_values = extract_trend_data(file_path, matched_sheet)
+
+                if years and actual_values:
+                    # Add actual consumption line (Graddagskorrigeret)
+                    fig_detail.add_trace(go.Scatter(
+                        x=years,
+                        y=actual_values,
+                        mode='lines+markers',
+                        name='Faktisk Forbrug (Graddagskorr.)',
+                        line=dict(color='#3b82f6', width=3),
+                        marker=dict(size=10),
+                        hovertemplate='%{x}: %{y:.1f} kWh<extra></extra>'
+                    ))
+
+                    # Use target from sheet if available, else fall back to Energi Oversigt
+                    has_target = False
+                    gap_text = ""
+                    gap_color = "#666"
+
+                    if target_values:
+                        # Target from individual sheet (varies by year)
+                        fig_detail.add_trace(go.Scatter(
+                            x=years,
+                            y=target_values,
+                            mode='lines+markers',
+                            name='Energimærke (Mål)',
+                            line=dict(color='#10b981', width=2, dash='dash'),
+                            marker=dict(size=6),
+                            hovertemplate='Mål %{x}: %{y:.1f} kWh<extra></extra>'
+                        ))
+
+                        # Add shaded gap area
+                        fig_detail.add_trace(go.Scatter(
+                            x=years + years[::-1],
+                            y=actual_values + target_values[::-1],
+                            fill='toself',
+                            fillcolor='rgba(239, 68, 68, 0.2)',
+                            line=dict(color='rgba(0,0,0,0)'),
+                            name='Ineffektivitets-gap',
+                            hoverinfo='skip',
+                            showlegend=True
+                        ))
+
+                        avg_gap = np.mean([a - t for a, t in zip(actual_values, target_values)])
+                        gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh"
+                        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+                        has_target = True
+
+                    elif target_from_overview and pd.notna(target_from_overview):
+                        # Fall back to horizontal target line from Energi Oversigt
+                        target_line = [target_from_overview] * len(years)
+
+                        fig_detail.add_trace(go.Scatter(
+                            x=years,
+                            y=target_line,
+                            mode='lines',
+                            name=f'Energimærke ({target_from_overview:.0f} kWh/m²)',
+                            line=dict(color='#10b981', width=2, dash='dash'),
+                            hovertemplate='Mål: %{y:.1f} kWh/m²<extra></extra>'
+                        ))
+
+                        # Add shaded gap area
+                        fig_detail.add_trace(go.Scatter(
+                            x=years + years[::-1],
+                            y=actual_values + target_line[::-1],
+                            fill='toself',
+                            fillcolor='rgba(239, 68, 68, 0.2)',
+                            line=dict(color='rgba(0,0,0,0)'),
+                            name='Ineffektivitets-gap',
+                            hoverinfo='skip',
+                            showlegend=True
+                        ))
+
+                        avg_gap = np.mean([a - target_from_overview for a in actual_values])
+                        gap_text = f"Gns. afvigelse: {avg_gap:+.1f} kWh"
+                        gap_color = "#ef4444" if avg_gap > 0 else "#10b981"
+                        has_target = True
+
+                    fig_detail.update_layout(
+                        title=dict(text=f"Forbrugsudvikling: {selected_address}", font=dict(size=14)),
+                        template="plotly_dark" if is_dark_mode else "plotly_white",
+                        xaxis_title="År",
+                        yaxis_title="kWh (Graddagskorrigeret)",
+                        legend=dict(orientation="h", y=-0.2, x=0.5, xanchor="center"),
+                        margin=dict(t=80, b=80),
+                        hovermode='x unified',
+                        annotations=[
+                            dict(
+                                text=gap_text,
+                                xref="paper", yref="paper",
+                                x=0.5, y=1.06,
+                                showarrow=False,
+                                font=dict(size=12, color=gap_color),
+                                xanchor="center"
+                            )
+                        ] if gap_text else []
                     )
-                ]
-            )
-        else:
-            fig_detail.add_annotation(text=f"Ingen audit-data for:<br>{selected_address}", showarrow=False)
+                else:
+                    # Fall back to Energi Oversigt if individual sheet has no data
+                    years, actual_values = extract_from_energi_oversigt(df_ov, addr_row, selected_address)
+                    if years and actual_values:
+                        build_trend_chart_from_data(fig_detail, years, actual_values, target_from_overview, selected_address, is_dark_mode)
+                    else:
+                        fig_detail.add_annotation(text=f"Ingen forbrugsdata for:<br>{selected_address}", showarrow=False)
+                        fig_detail.update_layout(template="plotly_dark" if is_dark_mode else "plotly_white")
+            else:
+                # No matching sheet found, try Energi Oversigt directly
+                years, actual_values = extract_from_energi_oversigt(df_ov, addr_row, selected_address)
+                if years and actual_values:
+                    build_trend_chart_from_data(fig_detail, years, actual_values, target_from_overview, selected_address, is_dark_mode)
+                else:
+                    fig_detail.add_annotation(text=f"Ingen data for:<br>{selected_address}", showarrow=False)
+                    fig_detail.update_layout(template="plotly_dark" if is_dark_mode else "plotly_white")
+
+        except Exception as detail_err:
+            print(f"Detail chart error: {detail_err}")
+            fig_detail.add_annotation(text=f"Fejl ved indlæsning:<br>{str(detail_err)[:50]}", showarrow=False)
             fig_detail.update_layout(template="plotly_dark" if is_dark_mode else "plotly_white")
 
         return fig_bar, fig_detail

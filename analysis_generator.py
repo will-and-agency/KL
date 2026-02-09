@@ -5,9 +5,9 @@ def get_randers_analysis():
     return html.Div(className="max-w-5xl mx-auto space-y-12 pb-20", children=[
         # Intro Section
         html.Div(className="text-center space-y-4", children=[
-            html.H2("Dashboard Forklaring: Randers Kommune", 
+            html.H2("Dashboard Forklaring: Randers Kommune",
                     className="text-3xl font-extrabold text-slate-800 dark:text-white"),
-            html.P("Denne sektion giver en dybdegående gennemgang af, hvordan de visuelle grafer skal læses, og hvilke datapunkter der præsenteres.",
+            html.P("Strategisk overblik over energiprojekter, bygningsmasse og driftsstatus for Randers Kommune.",
                    className="text-lg text-slate-600 dark:text-slate-400"),
         ]),
 
@@ -17,27 +17,27 @@ def get_randers_analysis():
                 html.Span("insights", className="material-icons-round text-primary text-3xl"),
                 html.H3("1. ROI Matrix: Strategisk Prioritering", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
-            html.P("Dette scatter-plot (punktdiagram) visualiserer sammenhængen mellem økonomisk investering og miljømæssig gevinst for foreslåede energiprojekter.",
+            html.P("Scatter-plot der visualiserer sammenhængen mellem investering og CO2-gevinst. Inkluderer trendlinje og kvadrant-opdeling for hurtig prioritering.",
                    className="text-slate-600 dark:text-slate-400 mb-6"),
-            
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("X-aksen (Investering):", className="text-primary"),
-                        html.P("Viser den samlede anlægsudgift i DKK for det enkelte projekt. Jo længere til højre et punkt er, jo dyrere er projektet at etablere.", className="text-sm mt-1")
+                        html.B("X-aksen (Investering i DKK):", className="text-primary"),
+                        html.P("Anlægsudgift pr. projekt. Den lodrette linje ved 0 separerer positive og negative værdier.", className="text-sm mt-1")
                     ]),
                     html.Div([
                         html.B("Y-aksen (CO2-besparelse):", className="text-primary"),
-                        html.P("Viser den årlige estimerede reduktion i CO2-udledning. Jo højere et punkt er placeret, jo større er klimaeffekten.", className="text-sm mt-1")
+                        html.P("Årlig CO2-reduktion i tons. Punkter over 0-linjen giver positiv klimaeffekt.", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("Farvekodning:", className="text-primary"),
-                        html.P("Projekterne er kategoriseret efter type (f.eks. belysning eller ventilation), hvilket gør det muligt at se tekniske mønstre.", className="text-sm mt-1")
+                        html.B("Trendlinje:", className="text-primary"),
+                        html.P("Den stiplede linje viser den generelle sammenhæng mellem investering og besparelse.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Ved at kigge i øverste venstre kvadrant finder man de mest effektive projekter (lav pris, høj besparelse). Punkter i nederste højre kvadrant repræsenterer projekter med en længere tilbagebetalingstid.",
+                    html.H4("Kvadrant-guide:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Øverste venstre = Quick Wins (lav pris, høj besparelse). Nederste højre = Lav prioritet (høj pris, lav effekt). Brug dette til at prioritere budgettet.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
@@ -47,57 +47,53 @@ def get_randers_analysis():
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
                 html.Span("domain", className="material-icons-round text-primary text-3xl"),
-                html.H3("2. Bygningsmasse: Karakteristika", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.H3("2. Bygningsmasse: Energiprofil", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
-            html.P("Dette histogram (søjlediagram) giver et overblik over den fysiske porteføljes sammensætning og energimæssige sundhedstilstand.",
+            html.P("Stacked bar chart der viser bygningsporteføljens energimæssige sammensætning fordelt på opførelsesår.",
                    className="text-slate-600 dark:text-slate-400 mb-6"),
-            
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("X-aksen (Opførelsesår):", className="text-primary"),
-                        html.P("Inddeler kommunens bygninger i tidsintervaller. Dette afslører trends relateret til historiske bygningsreglementer.", className="text-sm mt-1")
+                        html.B("Stablede søjler:", className="text-primary"),
+                        html.P("Hver søjle viser det totale antal bygninger pr. årti, opdelt i energimærker med officielle farver (A=grøn til G=rød).", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("Y-aksen (Antal/Areal):", className="text-primary"),
-                        html.P("Viser mængden af bygninger eller kvadratmeter inden for hvert tidsinterval.", className="text-sm mt-1")
-                    ]),
-                    html.Div([
-                        html.B("Farve-lag (Energimærke):", className="text-primary"),
-                        html.P("Hver søjle er opdelt i farver, der repræsenterer energimærker fra A (grøn) til G (rød).", className="text-sm mt-1")
+                        html.B("Farvekodning:", className="text-primary"),
+                        html.P("Følger den danske energimærke-standard. Grønne nuancer (A-B) er energieffektive, røde (F-G) kræver opmærksomhed.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Man kan direkte aflæse, om ældre bygninger systematisk har dårligere energimærker end nyere. Hvis en søjle for f.eks. 1960'erne er domineret af røde farver, indikerer det et stort behov for tekniske opgraderinger.",
+                    html.H4("Indsigt:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Identificér årtier med høj koncentration af røde mærker - disse bygninger har størst renoveringspotentiale og bør prioriteres i langtidsplanen.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Add this inside get_randers_analysis() in app.py
+        # Map Explanation
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
                 html.Span("location_on", className="material-icons-round text-red-500 text-3xl"),
-                html.H3("3. Ventilation Status: Geografisk Oversigt", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.H3("3. Ventilation Status: Geografisk Kort", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
-            html.P("Dette kort visualiserer sundhedstilstanden af kommunens ventilationsanlæg baseret på data fra Timesafe.", 
+            html.P("Interaktivt kort med clustering og statusfarver baseret på Timesafe-data.",
                 className="text-slate-600 dark:text-slate-400 mb-6"),
-            
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
-                    html.P([
-                        html.B("Kort-markører: ", className="text-red-600"),
-                        "Hver cirkel repræsenterer en institution. Farven skifter automatisk baseret på den mest kritiske status fundet i ventilations-tekstfilen."
-                    ], className="text-sm"),
-                    html.P([
-                        html.B("Data-sammenkobling: ", className="text-red-600"),
-                        "Systemet parrer automatisk lokationsnavne fra Timesafe med de officielle adresser fra bygningslisten for at placere markøren præcist."
-                    ], className="text-sm"),
+                    html.Div([
+                        html.B("Clustering:", className="text-red-600"),
+                        html.P("Markører grupperes automatisk ved zoom-out for bedre overblik. Zoom ind for at se individuelle bygninger.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Hover & Klik:", className="text-red-600"),
+                        html.P("Hold musen over en markør for bygningsnavn. Klik for fuld adresse og status.", className="text-sm mt-1")
+                    ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Anvendelse:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Ved at se fejlene geografisk kan driftsafdelingen optimere kørsel for teknikerne og se, om der er geografiske klynger af problemer (f.eks. pga. lokale strømudfald eller vejrforhold).",
+                    html.H4("Praktisk brug:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Brug legenden til at forstå farvekoderne. Planlæg teknikerruter baseret på geografiske klynger af fejl.",
                         className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
@@ -105,14 +101,14 @@ def get_randers_analysis():
 
         # Interaction Guide
         html.Div(className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800", children=[
-            html.H4("💡 Interaktivitetsguide", className="font-bold text-indigo-800 dark:text-indigo-300 mb-2"),
+            html.H4("Interaktivitet", className="font-bold text-indigo-800 dark:text-indigo-300 mb-2"),
             html.Ul(className="list-disc list-inside text-sm text-indigo-700 dark:text-indigo-400 space-y-1", children=[
-                html.Li("Hold musen over datapunkter for at se specifikke projektbeskrivelser."),
-                html.Li("Brug musen til at tegne en firkant i ROI-matricen for at zoome ind."),
-                html.Li("Klik på kategorierne i legenden for at isolere specifikke bygningstyper.")
+                html.Li("Scroll for at zoome i ROI-matricen. Træk for at panorere."),
+                html.Li("Klik på energimærker i legenden for at filtrere bygningsgrafen."),
+                html.Li("Brug kortets zoom og pan til at udforske specifikke områder.")
             ])
         ])
-        
+
     ])
 
 
@@ -121,78 +117,91 @@ def get_faaborg_analysis():
     return html.Div(className="max-w-5xl mx-auto space-y-12 pb-20", children=[
         # Intro Section
         html.Div(className="text-center space-y-4", children=[
-            html.H2(" Dashboard Forklaring: Faaborg-Midtfyn Kommune", 
+            html.H2("Dashboard Forklaring: Faaborg-Midtfyn Kommune",
                     className="text-3xl font-extrabold text-slate-800 dark:text-white"),
-            html.P("Denne sektion forklarer sammenhængen mellem energiforbrug, CO2-udledning og optimering af drift og indkøb.",
+            html.P("Analyse af energiperformance, indkøbsoptimering og vedligeholdelsesmønstre.",
                    className="text-lg text-slate-600 dark:text-slate-400"),
         ]),
 
-        # Energy Performance & Carbon Footprint
+        # Energy Performance
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
-                html.Span("co2", className="material-icons-round text-emerald-500 text-3xl"),
-                html.H3("1. Energi-afvigelse & Carbon Footprint", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.Span("electric_bolt", className="material-icons-round text-emerald-500 text-3xl"),
+                html.H3("1. Energiperformance: Faktisk vs. Forventet", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Split-view med afvigelsesoversigt og forbrugsudvikling over tid.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("Afvigelses-oversigt (Bar Chart):", className="text-emerald-600"),
-                        html.P("Viser forskellen mellem det budgetterede og det faktiske energiforbrug pr. bygning. En lang bjælke til højre indikerer et merforbrug, der kræver teknisk gennemgang.", className="text-sm mt-1")
+                        html.B("Venstre: Afvigelsesbar:", className="text-emerald-600"),
+                        html.P("Horisontalt søjlediagram med alle adresser. Rød = overforbrug, grøn = underforbrug. Den lodrette linje ved 0 adskiller over/under budget.", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("Carbon Trend (Stacked Area):", className="text-emerald-600"),
-                        html.P("Visualiserer den historiske udvikling i CO2-aftrykket fordelt på brændselstyper (Gas, El, Varme, Vand). Den stiplede linje viser det samlede CO2-aftryk over tid.", className="text-sm mt-1")
+                        html.B("Højre: Forbrugsudvikling:", className="text-emerald-600"),
+                        html.P("Dual-line chart der sammenligner faktisk forbrug (blå) med energimærkets forventning (grøn stiplet). Det røde område viser ineffektivitets-gabet.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Her kan man identificere, om en bygnings CO2-reduktion skyldes fald i én specifik energikilde (f.eks. gas ved konvertering til fjernvarme), eller om der er et generelt fald i alle kategorier.",
+                    html.H4("Sådan bruges det:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Vælg en adresse i dropdown'en for at se dens forbrugshistorik. Gabet mellem linjerne viser de 'skjulte omkostninger' ved dårlig drift.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Procurement Gap (Udbud vs Standard)
+        # Procurement Gap
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
                 html.Span("savings", className="material-icons-round text-blue-500 text-3xl"),
-                html.H3("2. Udbudsoptimering (Procurement Gap)", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.H3("2. Indkøbsoptimering: Waterfall", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Waterfall-diagram der visualiserer besparelsesflow fra standardpris til udbudspris.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("Standard Pris vs. Udbuds Pris:", className="text-blue-600"),
-                        html.P("Sammenligner de gængse markedspriser (Standard) med de faktiske priser opnået gennem udbudsaftaler.", className="text-sm mt-1")
+                        html.B("Tre kolonner:", className="text-blue-600"),
+                        html.P("Standard Pris → Besparelse (grøn) → Udbuds Pris. Overskriften viser både DKK og procentuel besparelse.", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("Besparelses-titel:", className="text-blue-600"),
-                        html.P("Overskriften beregner automatisk den samlede økonomiske gevinst opnået ved effektiv indkøbsstyring.", className="text-sm mt-1")
+                        html.B("Data-labels:", className="text-blue-600"),
+                        html.P("Hver søjle har påtrykt værdi i DKK for nem aflæsning.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Denne graf dokumenterer værdien af udbudsstyring. Forskellen mellem de to søjler repræsenterer den likviditet, der frigøres til andre energiforbedrende tiltag.",
+                    html.H4("Indsigt:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Dokumenterer værdien af strategisk indkøb. Besparelsen kan reinvesteres i energiforbedringer.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Ventilation Peaks (Seasonality)
+        # Ventilation Peaks
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
                 html.Span("air", className="material-icons-round text-sky-400 text-3xl"),
-                html.H3("3. Sæsonudsving i Vedligehold (Ventilation)", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.H3("3. Vedligeholdelsesmønster: Sæsonanalyse", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Area chart der viser filterskift fordelt på måneder med gennemsnits-reference.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("Månedlig fordeling:", className="text-sky-500"),
-                        html.P("Histogrammet tæller antallet af filterskift i ventilationsanlæg på tværs af kommunens 60+ ejendomme, fordelt på årets måneder.", className="text-sm mt-1")
+                        html.B("Månedsoversigt:", className="text-sky-500"),
+                        html.P("Danske månedsnavne i kronologisk rækkefølge. Datapunkter er farvekodede: grøn=under gns., orange=over gns., rød=peak.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Gennemsnitslinje:", className="text-sky-500"),
+                        html.P("Den stiplede linje viser det månedlige gennemsnit. Peak-måneden fremhæves i titlen.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Grafen afslører spidsbelastninger i driftsafdelingen. Hvis mange filtre skiftes i samme måned, kan det indikere et behov for at jævne vedligeholdelsesplanen ud for at undgå overbelastning af personalet.",
+                    html.H4("Praktisk brug:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Brug grafen til at sprede vedligeholdelsesopgaver jævnt over året og undgå overbelastning i peak-måneder.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
@@ -200,9 +209,12 @@ def get_faaborg_analysis():
 
         # Navigation Helper
         html.Div(className="p-6 bg-slate-100 dark:bg-slate-900/40 rounded-xl border border-slate-200 dark:border-slate-700", children=[
-            html.H4("💡 Tips til navigation", className="font-bold text-slate-800 dark:text-white mb-2"),
-            html.P("I CO2-oversigten kan du klikke på en bygning i venstre side for at opdatere trend-grafen til højre. Dette giver dig mulighed for at dykke ned i specifikke ejendommes historik.", 
-                   className="text-sm text-slate-600 dark:text-slate-400")
+            html.H4("Navigation", className="font-bold text-slate-800 dark:text-white mb-2"),
+            html.Ul(className="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-1", children=[
+                html.Li("Brug dropdown'en til at skifte mellem adresser i energioversigten."),
+                html.Li("Hover over søjler for at se detaljerede værdier."),
+                html.Li("Peak-måneden vises automatisk i graf-titlen.")
+            ])
         ])
     ])
 
@@ -212,90 +224,168 @@ def get_frederiksberg_analysis():
     return html.Div(className="max-w-5xl mx-auto space-y-12 pb-20", children=[
         # Intro Section
         html.Div(className="text-center space-y-4", children=[
-            html.H2("Dashboard Forklaring: Frederiksberg Kommune", 
+            html.H2("Dashboard Forklaring: Frederiksberg Kommune",
                     className="text-3xl font-extrabold text-slate-800 dark:text-white"),
-            html.P("Denne analyse gennemgår sammenhængen mellem vedligeholdelse, investeringsprojekter og bygningsmassens energipotentiale.",
+            html.P("Strategisk overblik over vedligeholdelse, energiprojekter og bygningsmassens karakteristika.",
                    className="text-lg text-slate-600 dark:text-slate-400"),
         ]),
 
-        # Maintenance Budget & Risk (D1 & D7)
+        # 1. Maintenance Budget
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
-                html.Span("warning", className="material-icons-round text-amber-500 text-3xl"),
-                html.H3("1. Vedligeholdelse & Risikostyring", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.Span("account_balance", className="material-icons-round text-amber-500 text-3xl"),
+                html.H3("1. Vedligeholdelsesplan: 10-årigt Budget", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Stacked bar chart der viser planlagt vedligeholdelsesbudget fordelt på år og kategorier.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("D1: Vedligeholdelsesplan (10 år):", className="text-amber-600"),
-                        html.P("Et søjlediagram der viser det planlagte budget fordelt på år og kategorier. Det giver overblik over, hvornår de store investeringer i bygningens drift rammer.", className="text-sm mt-1")
+                        html.B("Stablede søjler:", className="text-amber-600"),
+                        html.P("Hver søjle repræsenterer ét år og viser det samlede budget opdelt i kategorier (VVS, El, Tag osv.).", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("D7: Vedligeholdelsesrisiko (Heatmap):", className="text-amber-600"),
-                        html.P("Et heatmap der krydser tid (år) med bygningens tilstand (Grad 1-4). Røde felter indikerer dyre reparationer på bygninger i dårlig stand.", className="text-sm mt-1")
+                        html.B("Farvekodning:", className="text-amber-600"),
+                        html.P("Hver kategori har sin egen farve. Brug legenden til at isolere specifikke områder.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Ved at sammenligne D1 og D7 kan man se, om budgettet er allokeret korrekt til de mest kritiske opgaver (Grad 4). Heatmap'et afslører 'risiko-bølger', hvor mange bygninger forfalder samtidigt.",
+                    html.H4("Indsigt:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Identificér 'peak years' hvor budgettet er højest. Brug dette til likviditetsplanlægning og til at sprede store udgifter.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Projects & ROI (D2 & D8)
+        # 2. Project Scatter (DDK vs CO2)
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
-                html.Span("trending_up", className="material-icons-round text-blue-500 text-3xl"),
-                html.H3("2. Projektprioritering & CO2 Gevinst", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.Span("scatter_plot", className="material-icons-round text-emerald-500 text-3xl"),
+                html.H3("2. Projektpotentiale: Investering vs. CO2", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Scatter plot der visualiserer forholdet mellem investeringsomkostning og CO2-besparelse.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("D2: Investering vs. CO2 Reduktion:", className="text-blue-600"),
-                        html.P("Et scatter-plot der viser, hvor meget CO2 man sparer i forhold til projektets pris.", className="text-sm mt-1")
+                        html.B("X-aksen (Investering i DKK):", className="text-emerald-600"),
+                        html.P("Projektets samlede anlægsudgift. Højere = dyrere projekt.", className="text-sm mt-1")
                     ]),
                     html.Div([
-                        html.B("D8: Strategisk ROI:", className="text-blue-600"),
-                        html.P("Fokuserer på tilbagebetalingstid (TBT) mod CO2-gevinst. Boblernes størrelse indikerer investeringens samlede størrelse (DDK).", className="text-sm mt-1")
+                        html.B("Y-aksen (CO2-besparelse):", className="text-emerald-600"),
+                        html.P("Årlig CO2-reduktion i tons. Punkter højt oppe giver mest klimaeffekt.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Det grønne område i D8 markerer 'Quick Wins' — projekter der tjener sig selv hjem på under 10 år og samtidigt giver en høj CO2-reduktion.",
+                    html.H4("Kvadrant-guide:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Øverste venstre = Quick Wins (lav pris, høj besparelse). Hover over punkter for projektdetaljer.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Property Characteristics (D3)
+        # 3. Property Characteristics (3 subplots)
         html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
             html.Div(className="flex items-center gap-4 mb-6", children=[
-                html.Span("analytics", className="material-icons-round text-indigo-500 text-3xl"),
-                html.H3("3. Bygningskarakteristika & Besparelsespotentiale", className="text-2xl font-bold text-slate-800 dark:text-white"),
+                html.Span("domain", className="material-icons-round text-indigo-500 text-3xl"),
+                html.H3("3. Porteføljeanalyse: Bygningskarakteristika", className="text-2xl font-bold text-slate-800 dark:text-white"),
             ]),
+            html.P("Tre subplots der viser besparelsespotentiale fordelt på areal, energimærke og byggeår.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
             html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
                 html.Div(className="space-y-4", children=[
                     html.Div([
-                        html.B("D3: Besparelse pr. Byggeår:", className="text-indigo-600"),
-                        html.P("Viser det gennemsnitlige besparelsespotentiale i procent for bygninger opdelt efter deres opførelsesår.", className="text-sm mt-1")
+                        html.B("Areal (m²):", className="text-indigo-600"),
+                        html.P("Gennemsnitlig besparelse grupperet efter bygningsstørrelse. Større bygninger har ofte andet potentiale end små.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Energimærke:", className="text-indigo-600"),
+                        html.P("Besparelse pr. energimærke med officielle farver (A=grøn til G=rød). Dårlige mærker har typisk størst potentiale.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Byggeår:", className="text-indigo-600"),
+                        html.P("Besparelse pr. årti. Ældre bygninger fra 60-70'erne har ofte højere besparelsespotentiale.", className="text-sm mt-1")
                     ]),
                 ]),
                 html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
-                    html.H4("Hvad man kan se:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
-                    html.P("Her kan man identificere specifikke årgange af byggerier, der er særligt energi-ineffektive. Det hjælper med at målrette renoveringsindsatsen mod de mest 'lønsomme' byggeperioder.",
+                    html.H4("Hover-info:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Hold musen over søjlerne for at se hvilke bygninger der indgår, antal bygninger og gennemsnitlig besparelse.",
                            className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
                 ])
             ])
         ]),
 
-        # Interaction Guide (The missing piece)
-        html.Div(className="p-6 bg-slate-100 dark:bg-slate-900/40 rounded-xl border border-slate-200 dark:border-slate-700", children=[
-            html.H4("💡 Interaktivitetsguide", className="font-bold text-slate-800 dark:text-white mb-2"),
-            html.Ul(className="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-1", children=[
-                html.Li("Hold musen over heatmap'et (D7) for at se de præcise budgetbeløb for hver tilstandsgrad."),
-                html.Li("Brug legenden i D1 til at isolere specifikke vedligeholdelseskategorier som f.eks. 'Tag' eller 'VVS'."),
-                html.Li("I ROI-matricen (D8) kan du klikke og trække for at zoome ind på projekter med kort tilbagebetalingstid.")
+        # 4. Risk Heatmap
+        html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
+            html.Div(className="flex items-center gap-4 mb-6", children=[
+                html.Span("warning", className="material-icons-round text-red-500 text-3xl"),
+                html.H3("4. Risiko-Heatmap: Tilstand vs. Tid", className="text-2xl font-bold text-slate-800 dark:text-white"),
+            ]),
+            html.P("Heatmap der krydser bygningens tilstandsgrad (1-4) med årstal for at afsløre risikomønstre.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
+            html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
+                html.Div(className="space-y-4", children=[
+                    html.Div([
+                        html.B("Tilstandsgrader:", className="text-red-600"),
+                        html.P("Grad 1 = God stand, Grad 4 = Kritisk. Røde felter indikerer høje omkostninger på bygninger i dårlig stand.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Farveskala:", className="text-red-600"),
+                        html.P("Lysere = lavere omkostninger. Mørkere rød = højere omkostninger. Hvide felter = ingen data.", className="text-sm mt-1")
+                    ]),
+                ]),
+                html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
+                    html.H4("Risikobølger:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Se efter lodrette mønstre (mange bygninger forfalder samme år) eller vandrette (én tilstandsgrad koster meget over tid).",
+                           className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
+                ])
+            ])
+        ]),
+
+        # 5. ROI Bubble Chart
+        html.Div(className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-200 dark:border-slate-700", children=[
+            html.Div(className="flex items-center gap-4 mb-6", children=[
+                html.Span("bubble_chart", className="material-icons-round text-blue-500 text-3xl"),
+                html.H3("5. ROI Bubble: Tilbagebetalingstid vs. CO2", className="text-2xl font-bold text-slate-800 dark:text-white"),
+            ]),
+            html.P("Bubble chart der kombinerer tilbagebetalingstid, CO2-besparelse og investeringsstørrelse.",
+                   className="text-slate-600 dark:text-slate-400 mb-6"),
+
+            html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-8", children=[
+                html.Div(className="space-y-4", children=[
+                    html.Div([
+                        html.B("X-aksen (TBT i år):", className="text-blue-600"),
+                        html.P("Tilbagebetalingstid. Projekter til venstre tjener sig hurtigere hjem.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Y-aksen (CO2):", className="text-blue-600"),
+                        html.P("CO2-besparelse. Højere = større klimaeffekt.", className="text-sm mt-1")
+                    ]),
+                    html.Div([
+                        html.B("Boblestørrelse:", className="text-blue-600"),
+                        html.P("Større bobler = større investering (DDK). Små bobler kan være 'low-hanging fruit'.", className="text-sm mt-1")
+                    ]),
+                ]),
+                html.Div(className="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-300 dark:border-slate-600", children=[
+                    html.H4("Quick Wins zone:", className="font-bold mb-2 text-slate-800 dark:text-white text-sm uppercase tracking-wider"),
+                    html.P("Fokusér på det grønne område: Projekter med kort TBT og høj CO2-gevinst. Disse bør prioriteres i budgettet.",
+                           className="text-sm leading-relaxed text-slate-600 dark:text-slate-400")
+                ])
+            ])
+        ]),
+
+        # Interaction Guide
+        html.Div(className="p-6 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800", children=[
+            html.H4("Interaktivitet", className="font-bold text-indigo-800 dark:text-indigo-300 mb-2"),
+            html.Ul(className="list-disc list-inside text-sm text-indigo-700 dark:text-indigo-400 space-y-1", children=[
+                html.Li("Hover over heatmap-celler for præcise budgetbeløb."),
+                html.Li("Klik på legenden i vedligeholdelsesplanen for at isolere kategorier."),
+                html.Li("Hover over porteføljeanalysen for at se bygningsnavne i hver gruppe."),
+                html.Li("Zoom i ROI-diagrammerne ved at trække et område.")
             ])
         ])
     ])

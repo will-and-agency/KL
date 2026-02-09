@@ -216,47 +216,47 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
 
         return header_text, [
             make_card(
-                "ROI Matrix: Strategisk Prioritering", 
-                "Prioritering af energiprojekter baseret på CO2-besparelse og investering. Scroll for at zoome i data.", 
-                "KOMMUNE", "RANDERS", 
-                "STATUS", "VERIFICERET", 
+                "ROI Matrix: Strategisk Prioritering",
+                "Scatter plot med trendlinje og kvadrant-opdeling. Øverste venstre = Quick Wins (lav pris, høj CO2-gevinst).",
+                "DATAKILDE", "DALUX FM",
+                "FOKUS", "ENERGIPROJEKTER",
                 plot=dcc.Graph(
                     id={'type': 'dynamic-graph', 'index': 1},
-                    figure=fig_roi, 
+                    figure=fig_roi,
                     config={'displayModeBar': True, 'scrollZoom': True, 'responsive': True},
                     style={'height': '100%', 'width': '100%'}
                 )
             ),
             make_card(
-                "Bygningsmasse: Karakteristika", 
-                "Fordeling af ejendomme baseret på opførelsesår og energimærke.", 
-                "BYGNINGER", "TOTAL OVERSIGT", 
-                "ANALYSE", "KLAR", 
+                "Bygningsmasse: Energiprofil",
+                "Stacked bar chart med energimærker fordelt på årti. Officielle danske farver (A=grøn til G=rød).",
+                "VISUALISERING", "ÅRTI + MÆRKE",
+                "FORMÅL", "RENOVERING",
                 plot=dcc.Graph(
                     id={'type': 'dynamic-graph', 'index': 2},
-                    figure=fig_char, 
+                    figure=fig_char,
                     config={'displayModeBar': True, 'scrollZoom': True, 'responsive': True},
                     style={'height': '100%', 'width': '100%'}
                 )
             ),
 
             make_card(
-                "Ventilation Status Kort", 
-                "Geografisk overblik over kritiske fejl og vedligeholdelsesbehov fra Timesafe data.", 
-                "KILDE", "TIMESAFE", 
-                "REGION", "RANDERS", 
+                "Ventilation Status: Geografisk Kort",
+                "Interaktivt kort med clustering og statusfarver. Klik på markører for bygningsdetaljer.",
+                "DATAKILDE", "TIMESAFE",
+                "VISNING", "CLUSTER",
                 plot=html.Iframe(
                     id="randers-ventilation-map",
                     srcDoc=map_html,
                     style={
-                        "width": "100%", 
-                        "height": "500px", # Matches the height of your other graphs
+                        "width": "100%",
+                        "height": "500px",
                         "border": "none",
                         "border-radius": "8px"
                     }
                 )
             )
-            
+
         ]
 
     # --- MODE 2: FAABORG-MIDTFYN ---
@@ -330,22 +330,24 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
 
         return header_text, [
             make_card(
-                "Forbrug & Bæredygtighed", 
-                "Sammenligning af faktiske regninger mod energimærker. Det røde område viser 'skjulte omkostninger'.", 
-                "ADRESSER", "170+", 
-                "STATUS", "KLAR", 
-                plot=db2_display # PASS THE COMBINED DIV HERE
+                "Energiperformance: Faktisk vs. Forventet",
+                "Split-view: Afvigelsesbar (venstre) og forbrugsudvikling (højre). Det røde område viser ineffektivitets-gabet.",
+                "ANALYSE", "DUAL-LINE",
+                "SAMMENLIGNING", "KWH/M²",
+                plot=db2_display
             ),
             make_card(
-                "Indkøb & Prisfølsomhed", 
-                "Visualisering af besparelsespotentialet ved at samle vedligeholdelsesopgaver i 'Bulk' ordrer (Pris 1 vs Pris 3).",
-                "POTENTIALE", "HØJT", "STRATEGI", "INDLYSENDE",
+                "Indkøbsoptimering: Waterfall",
+                "Visualiserer besparelsesflow fra standardpris til udbudspris. Grøn søjle viser den opnåede besparelse.",
+                "METODE", "BULK INDKØB",
+                "EFFEKT", "SYNLIG",
                 plot=dcc.Graph(figure=fig5, style={'height': '500px'})
             ),
             make_card(
-                "Vedligeholdelses-Peak (Sæson)", 
-                "Histogram over hvornår filtre skiftes på tværs af 60 lokationer. Bruges til at undgå 'burnout' i Team 6.",
-                "PEAK MÅNED", "JANUAR", "ENHEDER", "50+",
+                "Vedligeholdelsesmønster: Sæsonanalyse",
+                "Area chart med filterskift pr. måned. Farvekodning: grøn=under gns., orange=over gns., rød=peak.",
+                "PEAK MÅNED", "SE GRAF",
+                "FORMÅL", "PLANLÆGNING",
                 plot=dcc.Graph(figure=fig6, style={'height': '500px'})
             )
         ]
@@ -360,33 +362,41 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
         files = muni_cfg["files"]
 
         return header_text, [
-            #html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-6", children=[
                 make_card(
-                    "Vedligeholdelsesplan", "10-årigt budget.", 
-                    "TYPE", "DALUX", "PRIORITET", "HØJ", # Added missing 2
+                    "Vedligeholdelsesplan: 10-årigt Budget",
+                    "Stacked bar chart med planlagte udgifter fordelt på kategorier. Brug legenden til at isolere områder.",
+                    "HORISONT", "2023-2033",
+                    "KATEGORIER", "STABLEDE",
                     plot=dcc.Graph(figure=create_frb_maintenance_budget())
                 ),
                 make_card(
-                    "Potentiale", "DDK vs CO2.", 
-                    "UNIT", "TONS", "STATUS", "ANALYSERET", # Added missing 2
+                    "Projektpotentiale: DDK vs. CO2",
+                    "Scatter plot der viser forholdet mellem investering og klimaeffekt. Øverste venstre = Quick Wins.",
+                    "X-AKSE", "INVESTERING",
+                    "Y-AKSE", "CO2 TONS",
                     plot=dcc.Graph(figure=create_frb_project_scatter())
                 ),
                 make_card(
-                    "Portefølje Analyse", "Energimærke vs Byggeår", 
-                    "KILDE", "ESG", "BYGNINGER", "ALLE", # Added missing 2
+                    "Porteføljeanalyse: 3 Dimensioner",
+                    "Besparelsespotentiale opdelt på areal, energimærke og byggeår. Hover for bygningsnavne.",
+                    "SUBPLOTS", "M² / MÆRKE / ÅR",
+                    "HOVER", "AKTIVERET",
                     plot=dcc.Graph(figure=create_frb_property_characteristics())
                 ),
                 make_card(
-                    "Risiko Heatmap", "Tilstand vs Pris.", 
-                    "LEVEL", "GRAD 1-4", "RISIKO", "SYNLIG", # Added missing 2
+                    "Risiko-Heatmap: Tilstand vs. Tid",
+                    "Krydser tilstandsgrad (1-4) med årstal. Mørkere farver = højere omkostninger.",
+                    "GRADER", "1 (GOD) - 4 (KRITISK)",
+                    "FARVESKALA", "RØD INTENSITET",
                     plot=dcc.Graph(figure=create_frb_risk_heatmap())
                 ),
                 make_card(
-                    "ROI Bubble", "Investering vs TBT.", 
-                    "FOCUS", "ROI", "OPTIMAL", "JA", # Added missing 2
+                    "ROI Bubble: TBT vs. CO2",
+                    "Tilbagebetalingstid mod CO2-besparelse. Boblestørrelse = investeringsbeløb (DDK).",
+                    "QUICK WINS", "GRØN ZONE",
+                    "BOBLE", "= DKK STØRRELSE",
                     plot=dcc.Graph(figure=create_frb_roi_chart())
                 )
-            #])
         ]
 
     # --- DEFAULT / FALLBACK ---

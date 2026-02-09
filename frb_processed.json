@@ -1,30 +1,6 @@
 {
     "maintenance": [
         {
-            "Year": 2025,
-            "Condition": "Grad 2",
-            "Category": "(52)",
-            "Cost": 557755.0
-        },
-        {
-            "Year": 2026,
-            "Condition": "Grad 2",
-            "Category": "(52)",
-            "Cost": 16444065.0
-        },
-        {
-            "Year": 2027,
-            "Condition": "Grad 2",
-            "Category": "(52)",
-            "Cost": 1352060.0
-        },
-        {
-            "Year": 2028,
-            "Condition": "Grad 2",
-            "Category": "(52)",
-            "Cost": 29652680.0
-        },
-        {
             "Year": 2026,
             "Condition": "Grad 3",
             "Category": "Teknik",
@@ -339,435 +315,435 @@
     ],
     "projects": [
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 1: Efterisolering af vægge og loft mod skunkrum med 200 mm isolering ",
             "DDK": 15390.0,
             "CO2": 0.05525,
             "TBT": 30.78551060639855
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 2: Indvendig efterisolering af massive ydervægge med 50 mm",
             "DDK": 207900.0,
             "CO2": 0.751597,
             "TBT": 30.57005521490146
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 1: Indvendig efterisolering af massive ydervægge med 50 mm",
             "DDK": 171528.0,
             "CO2": 0.620041,
             "TBT": 30.57077512816287
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Indvendig isolering af uisolerede skråvægge med 300 mm",
             "DDK": 730320.0,
             "CO2": 3.504623,
             "TBT": 23.02959674331633
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Indvendig isolering af uisolerede skråvægge med 300 mm",
             "DDK": 59942.0,
             "CO2": 0.18525,
             "TBT": 35.76127846182712
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 2: Indvendig isolering af uisolerede skråvægge med 300 mm",
             "DDK": 98070.0,
             "CO2": 0.24765,
             "TBT": 43.76610184876636
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Brugsvandsrør",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Isolering af brugsvandsrør og cirkulationsledning op til 50 mm",
             "DDK": 12756.0,
             "CO2": 0.6695,
             "TBT": 2.10573615007183
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Brugsvandsrør",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af brugsvandsrør og cirkulationsledning op til 50 mm",
             "DDK": 59472.0,
             "CO2": 2.072357,
             "TBT": 3.1723370502286
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af loft mod skunkrum med 300 mm isolering ",
             "DDK": 186490.0,
             "CO2": 0.580647,
             "TBT": 35.49492253593359
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 1: Isolering af uisoleret gulv mod uopvarmet kælder med 250 mm isolering ",
             "DDK": 43000.0,
             "CO2": 0.0793,
             "TBT": 59.9287600349315
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 2: Isolering af uisoleret gulv mod uopvarmet kælder med 250 mm isolering ",
             "DDK": 92000.0,
             "CO2": 0.16965,
             "TBT": 59.93409985138298
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af uisoleret gulv mod uopvarmet kælder/varmecentral med 200 mm isolering ",
             "DDK": 56720.0,
             "CO2": 0.499397,
             "TBT": 12.55192607004063
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af uisoleret kvisttage med 300 mm isolering ",
             "DDK": 30400.0,
             "CO2": 0.13065,
             "TBT": 25.71604595829619
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Varmefordelingsrør",
+            "Description": "Skolen på Duevej - villa 1: Isolering af uisoleret rørstykke, pumper og T-stykke op til 50 mm",
             "DDK": 378.0,
             "CO2": 0.0325,
             "TBT": 1.28543009198647
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Varmefordelingsrør",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af varmerør i loftsrum op til 50 mm",
             "DDK": 25536.0,
             "CO2": 0.4212,
             "TBT": 6.70045864135606
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Varmefordelingsrør",
+            "Description": "Skolen på Duevej - villa 2: Isolering af varmerør op til 50 mm",
             "DDK": 9660.0,
             "CO2": 0.0572,
             "TBT": 18.66470461849035
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Varmefordelingsrør",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af varmerør op til 50 mm (Vent.)",
             "DDK": 26796.0,
             "CO2": 0.26325,
             "TBT": 11.24971740311886
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Brugsvandsrør",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af ventiler med flanger ved tilslutningsrør",
             "DDK": 2400.0,
             "CO2": 0.201303,
             "TBT": 1.31780302468739
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Brugsvandsrør",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Isolering af ventiler med flanger ved tilslutningsrør",
             "DDK": 2400.0,
             "CO2": 0.03835,
             "TBT": 6.91649228940794
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Isolering af vægge mod skunkrum med 300 mm isolering ",
             "DDK": 186490.0,
             "CO2": 0.898044,
             "TBT": 22.94963461545727
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Solceller",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Montage af nye solceller",
             "DDK": 520000.0,
             "CO2": 2.908508,
             "TBT": 27.22907411617829
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Ophugning af eksisterende kældergulv og støbning af nyt med 300 mm mineraluld eller polystyrenplader",
             "DDK": 1180560.0,
             "CO2": 0.720594,
             "TBT": 181.05469975709076
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Ophugning af eksisterende kældergulv og støbning af nyt med 300 mm mineraluld eller polystyrenplader",
             "DDK": 711840.0,
             "CO2": 0.38025,
             "TBT": 206.89652165686377
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 1: Ophugning af eksisterende terrændæk og støbning af nyt med 300 mm isolering",
             "DDK": 114960.0,
             "CO2": 0.08905,
             "TBT": 142.6766340079984
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - villa 2: Ophugning af eksisterende terrændæk og støbning af nyt med 300 mm isolering",
             "DDK": 116208.0,
             "CO2": 0.0897,
             "TBT": 143.1804119024262
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Ophugning af eksisterende terrændæk og støbning af nyt med 500 mm isolering",
             "DDK": 144000.0,
             "CO2": 0.06695,
             "TBT": 237.71245344178743
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskifte belysning i bibliotek",
             "DDK": 75604.143,
             "CO2": 0.019208,
             "TBT": 382.8959375245311
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskifte belysning i undervisningslokaler",
             "DDK": 777613.0769999999,
             "CO2": 0.712393,
             "TBT": 105.91163397260652
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af belysning i bad og toilet",
             "DDK": 20388.08,
             "CO2": 0.015662,
             "TBT": 126.13771278849993
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af belysning i gangarealer uden dagslys",
             "DDK": 91764.396,
             "CO2": 0.121671,
             "TBT": 73.11434500700592
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af belysning i gange og opgang",
             "DDK": 15542.75,
             "CO2": 0.021454,
             "TBT": 70.16697598176884
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af belysning i gange og opgange",
             "DDK": 59062.45,
             "CO2": 0.080713,
             "TBT": 71.18507629299025
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af belysning i gymnastiksal 1 sal. (Pigerne)",
             "DDK": 159939.91,
             "CO2": 0.204195,
             "TBT": 76.39864312799934
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af belysning i kontor og personalerum",
             "DDK": 336186.882,
             "CO2": -0.079767,
             "TBT": -411.28411164120143
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af belysning i kontorer i stueetage",
             "DDK": 65473.05,
             "CO2": 0.08552,
             "TBT": 74.43248019821058
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af belysning i kælder",
             "DDK": 26733.53,
             "CO2": 0.020094,
             "TBT": 131.7052418957533
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af belysning i omklædninger",
             "DDK": 85498.4,
             "CO2": 0.176458,
             "TBT": 47.04399444111156
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Udskiftning af belysning i opbevaringsrum og teknikrum i kælder",
             "DDK": 195216.94,
             "CO2": 0.213555,
             "TBT": 88.52737603048125
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af belysning i undervisningslokaler på 1 sal",
             "DDK": 89594.7,
             "CO2": 0.018912,
             "TBT": 468.9839824120603
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af belysning i uopvarmet varmecentral i kælder",
             "DDK": 44079.239,
             "CO2": 0.105395,
             "TBT": 41.40256328370826
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af belysning i ventilationsteknikrum",
             "DDK": 8641.769,
             "CO2": 0.004019,
             "TBT": 205.91623498239107
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af belysning i øvrige gangarealer",
             "DDK": 152567.634,
             "CO2": 0.098485,
             "TBT": 148.55242535044536
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af eksisterende ovenlysvinduer",
             "DDK": 75210.0,
             "CO2": 0.03965,
             "TBT": 209.6391647547534
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af eksisterende ovenlysvinduer med 1 lags glas",
             "DDK": 14904.0,
             "CO2": 0.01885,
             "TBT": 87.38391758331638
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af eksisterende ovenlysvinduer med 1 lags rude",
             "DDK": 19872.0,
             "CO2": 0.02665,
             "TBT": 82.41084910296505
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Udskiftning af eksisterende ovenlysvinduer med termorude",
             "DDK": 91080.0,
             "CO2": 0.049203,
             "TBT": 204.67930878260307
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af eksisterende ovenlysvinduer med termoruder",
             "DDK": 60168.0,
             "CO2": 0.0312,
             "TBT": 213.13315083399928
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af eksisterende vinduer med 1 lags glasrude",
             "DDK": 83360.0,
             "CO2": 0.23465,
             "TBT": 39.26242963695488
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af eksisterende vinduer med 1 lags glasrude",
             "DDK": 11560.0,
             "CO2": 0.02795,
             "TBT": 45.7105077622848
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af eksisterende yderdøre med 1 lags glas.",
             "DDK": 53055.0,
             "CO2": 0.13845,
             "TBT": 42.35194719573113
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af eksisterende yderdøre med 1 lags glasrude",
             "DDK": 50463.0,
             "CO2": 0.1326,
             "TBT": 42.06002874514538
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af eksisterende yderdøre med 1 lags glasrude",
             "DDK": 65529.0,
             "CO2": 0.1651,
             "TBT": 43.86584411208031
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Udskiftning af eksisterende yderdøre med termoruder",
             "DDK": 355752.0,
             "CO2": 0.477494,
             "TBT": 82.33372003156228
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - Gymnastiksalen: Udskiftning af indvendige glasrude i vinduer",
             "DDK": 206712.0,
             "CO2": 0.37115,
             "TBT": 61.55399539810095
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 2: Udskiftning af indvendige glasrude i vinduer med forsatsruder",
             "DDK": 71955.0,
             "CO2": 0.11635,
             "TBT": 68.34938537797149
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Ventilation",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af VE-1-138 - Skolekøkken",
             "DDK": 133348.48,
             "CO2": 0.152841,
             "TBT": 90.9262231830214
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Ventilation",
+            "Description": "Skolen på Duevej - Bygning 1: Udskiftning af VE-1-141 - Bibliotek/kælder",
             "DDK": 182713.12,
             "CO2": 0.645147,
             "TBT": 29.51570213871381
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Ventilation",
+            "Description": "Skolen på Duevej - SFO Pyramiden: Udskiftning af ventilation VE01-VE02-VE03",
             "DDK": 1200000.0,
             "CO2": 2.533179,
             "TBT": 49.29444309042194
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Vinduer & døre",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning af vinduers inderste  glasrude",
             "DDK": 34425.0,
             "CO2": 0.05655,
             "TBT": 67.2792843712128
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Belysning",
+            "Description": "Skolen på Duevej - villa 1: Udskiftning afbelysning i mødelokale og kontorer på 1 sal.",
             "DDK": 55135.2,
             "CO2": 0.03024,
             "TBT": 178.49258725094572
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Udvendig efterisolering af kvistflunke med 200 mm",
             "DDK": 38000.0,
             "CO2": 0.2054,
             "TBT": 20.44669793361366
         },
         {
-            "Type": "Diverse",
-            "Description": "Ingen beskrivelse",
+            "Type": "Bygningsdele",
+            "Description": "Skolen på Duevej - Bygning 1: Udvendig efterisolering af kælderydervægge mod jord med 200 mm",
             "DDK": 632040.0,
             "CO2": 0.30875,
             "TBT": 226.2442872010932
