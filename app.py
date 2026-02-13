@@ -195,7 +195,7 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
     header_text = f"{muni_value.replace('-', ' ')} KOMMUNE".upper()
     
     # Global check for the Analysis page
-    if pathname == "/analyse":
+    if pathname == "/forklaring":
         if muni_value == "randers":
             return header_text, get_randers_analysis()
         elif muni_value == "faaborg":
