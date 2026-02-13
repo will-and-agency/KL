@@ -203,7 +203,7 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
         elif muni_value == "frederiksberg":
             return header_text, get_frederiksberg_analysis()
         else:
-            return header_text, html.Div("Analyse for denne kommune er under udarbejdelse...", className="p-10 text-slate-500 text-center")
+            return header_text, html.Div("Forklaring for denne kommune er under udarbejdelse...", className="p-10 text-slate-500 text-center")
 
 
     # --- MODE 1: RANDERS ---
@@ -216,8 +216,8 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
 
         return header_text, [
             make_card(
-                "ROI Matrix: Strategisk Prioritering", 
-                "Prioritering af energiprojekter baseret på CO2-besparelse og investering. Scroll for at zoome i data.", 
+                "ROI Matrix: Strategisk Prioritering",
+                "Denne matrix prioriterer energiprojekter baseret på forholdet mellem CO2-besparelse og investeringsomkostning. Brug scatter-plottet til at identificere de projekter, der giver størst klimaeffekt pr. investeret krone — scroll for at zoome i data.",
                 "KOMMUNE", "RANDERS", 
                 "STATUS", "VERIFICERET", 
                 plot=dcc.Graph(
@@ -228,8 +228,8 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
                 )
             ),
             make_card(
-                "Bygningsmasse: Karakteristika", 
-                "Fordeling af ejendomme baseret på opførelsesår og energimærke.", 
+                "Bygningsmasse: Karakteristika",
+                "Oversigt over kommunens ejendomsportefølje fordelt på opførelsesår og energimærkeklasse. Diagrammet afslører mønstre i bygningsstanden og hjælper med at målrette renoveringsindsatsen mod de mest energitunge segmenter.",
                 "BYGNINGER", "TOTAL OVERSIGT", 
                 "ANALYSE", "KLAR", 
                 plot=dcc.Graph(
@@ -241,8 +241,8 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
             ),
 
             make_card(
-                "Ventilation Status Kort", 
-                "Geografisk overblik over kritiske fejl og vedligeholdelsesbehov fra Timesafe data.", 
+                "Ventilation Status Kort",
+                "Geografisk overblik over ventilationsanlæg med kritiske fejl og vedligeholdelsesbehov baseret på Timesafe-data. Kortet gør det muligt hurtigt at lokalisere problemområder og planlægge service-indsatsen effektivt.",
                 "KILDE", "TIMESAFE", 
                 "REGION", "RANDERS", 
                 plot=html.Iframe(
@@ -330,21 +330,21 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
 
         return header_text, [
             make_card(
-                "Forbrug & Bæredygtighed", 
-                "Sammenligning af faktiske regninger mod energimærker. Det røde område viser 'skjulte omkostninger'.", 
+                "Forbrug & Bæredygtighed",
+                "Sammenligner faktisk energiforbrug med det forventede forbrug ifølge bygningernes energimærker. Det røde område synliggør de 'skjulte omkostninger', hvor bygninger bruger markant mere energi end deres mærkning indikerer.",
                 "ADRESSER", "170+", 
                 "STATUS", "KLAR", 
                 plot=db2_display # PASS THE COMBINED DIV HERE
             ),
             make_card(
-                "Indkøb & Prisfølsomhed", 
-                "Visualisering af besparelsespotentialet ved at samle vedligeholdelsesopgaver i 'Bulk' ordrer (Pris 1 vs Pris 3).",
+                "Indkøb & Prisfølsomhed",
+                "Visualiserer besparelsespotentialet ved at samle vedligeholdelsesopgaver i fællesindkøb fremfor enkeltordrer. Sammenligningen af Pris 1 og Pris 3 viser, hvor meget kommunen kan spare ved en koordineret indkøbsstrategi.",
                 "POTENTIALE", "HØJT", "STRATEGI", "INDLYSENDE",
                 plot=dcc.Graph(figure=fig5, style={'height': '500px'})
             ),
             make_card(
-                "Vedligeholdelses-Peak (Sæson)", 
-                "Histogram over hvornår filtre skiftes på tværs af 60 lokationer. Bruges til at undgå 'burnout' i Team 6.",
+                "Vedligeholdelses-Peak (Sæson)",
+                "Histogram over hvornår filterskift udføres på tværs af 60+ lokationer i løbet af året. Indsigten bruges til at udjævne arbejdsbyrden og undgå sæsonbestemte flaskehalse i driftsteamet.",
                 "PEAK MÅNED", "JANUAR", "ENHEDER", "50+",
                 plot=dcc.Graph(figure=fig6, style={'height': '500px'})
             )
@@ -362,27 +362,27 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
         return header_text, [
             #html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-6", children=[
                 make_card(
-                    "Vedligeholdelsesplan", "10-årigt budget.", 
+                    "Vedligeholdelsesplan", "Oversigt over det 10-årige vedligeholdelsesbudget baseret på Dalux-data. Planen fordeler investeringsbehovet over tid og synliggør, hvornår de største udgiftsposter falder.",
                     "TYPE", "DALUX", "PRIORITET", "HØJ", # Added missing 2
                     plot=dcc.Graph(figure=create_frb_maintenance_budget())
                 ),
                 make_card(
-                    "Potentiale", "DKK vs CO2.", 
+                    "Potentiale", "Scatter-plot der viser forholdet mellem investeringsomkostning (DKK) og CO2-reduktion for hvert potentielt projekt. Bruges til at identificere de mest omkostningseffektive klimaindsatser i porteføljen.",
                     "UNIT", "TONS", "STATUS", "ANALYSERET", # Added missing 2
                     plot=dcc.Graph(figure=create_frb_project_scatter())
                 ),
                 make_card(
-                    "Portefølje Analyse", "Energimærke vs Byggeår", 
+                    "Portefølje Analyse", "Analyse af kommunens bygningsportefølje med energimærkeklasse plottet mod byggeår. Visualiseringen afslører sammenhængen mellem bygningsalder og energiperformance og peger på renoveringspotentialet.",
                     "KILDE", "ESG", "BYGNINGER", "ALLE", # Added missing 2
                     plot=dcc.Graph(figure=create_frb_property_characteristics())
                 ),
                 make_card(
-                    "Risiko Heatmap", "Tilstand vs Pris.", 
+                    "Risiko Heatmap", "Heatmap der krydser bygningernes fysiske tilstand med deres vedligeholdelsesomkostninger. Gør det muligt at prioritere indsatsen mod bygninger med høj risiko — dårlig tilstand kombineret med stigende omkostninger.",
                     "LEVEL", "GRAD 1 (GOD) - 5 (Kritisk)", "RISIKO", "SYNLIG", # Added missing 2
                     plot=dcc.Graph(figure=create_frb_risk_heatmap())
                 ),
                 make_card(
-                    "ROI Bubble", "Investering vs TBT.", 
+                    "ROI Bubble", "Bubble-diagram der visualiserer investeringens størrelse mod tilbagebetalingstiden (TBT) for hvert projekt. Større bobler indikerer højere investeringsbeløb, og placeringen afslører hvilke projekter der hurtigst tjener sig hjem.",
                     "FOCUS", "ROI", "OPTIMAL", "JA", # Added missing 2
                     plot=dcc.Graph(figure=create_frb_roi_chart())
                 )

@@ -120,7 +120,7 @@ def create_frb_project_scatter(is_dark_mode=False):
     y_max = df['CO2'].max()
 
     fig.update_layout(
-        margin=dict(t=80, b=50, l=60, r=60),
+        margin=dict(t=80, b=50, l=60, r=140),
         legend=dict(orientation="h", y=-0.15, x=0.5, xanchor="center"),
         annotations=[
             dict(x=x_max * 0.15, y=y_max * 0.85, text="Lav Investering<br>Høj CO2 ✓",
