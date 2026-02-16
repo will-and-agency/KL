@@ -30,7 +30,7 @@ app.index_string = '''
 <html lang="da">
     <head>
         {%metas%}
-        <title>KL Portal</title>
+        <title>KOPRIP (Kommunernes Prioriterings Platform)</title>
         {%favicon%}
         {%css%}
     </head>
@@ -50,12 +50,15 @@ app.index_string = '''
 def create_sidebar():
     return html.Aside(
         id="sidebar",
-        className="fixed inset-y-0 left-0 z-40 w-72 bg-sidebar-light dark:bg-sidebar-dark border-r border-slate-200 dark:border-slate-800 lg:static lg:block",
+        className="fixed inset-y-0 left-0 z-40 w-72 bg-sidebar-light dark:bg-sidebar-dark border-r border-slate-200 dark:border-slate-800 lg:static lg:block flex flex-col min-h-screen",
         children=[
-            html.Div(className="p-6", children=[
+            html.Div(className="p-6 flex-1", children=[
                 html.Div(className="flex items-center gap-2 mb-10", children=[
                     html.Span("analytics", className="material-icons-round text-primary text-3xl"),
-                    html.H2("KL Portal", className="text-2xl font-bold tracking-tight uppercase")
+                    html.Div([
+                        html.H2("KOPRIP", className="text-2xl font-bold tracking-tight uppercase"),
+                        html.P("Kommunernes Prioriterings Platform", className="text-xs text-gray-400 tracking-wide")
+                    ])
                 ]),
                 
                 html.Div(className="space-y-6", children=[
@@ -103,7 +106,9 @@ def create_sidebar():
                     ])
                 ])
             ]),
-            
+            html.Div(className="p-6 mt-auto", children=[
+                html.Span("Prototype", className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold")
+            ]),
         ]
     )
 
@@ -192,7 +197,13 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
 )
 def update_dynamic_content(pathname, muni_value, theme_trigger):
     # Standard header formatting
-    header_text = f"{muni_value.replace('-', ' ')} KOMMUNE".upper()
+    muni_display_names = {
+        "randers": "Randers",
+        "faaborg": "Faaborg-Midtfyn",
+        "frederiksberg": "Frederiksberg",
+    }
+    display_name = muni_display_names.get(muni_value, muni_value)
+    header_text = f"{display_name} KOMMUNE".upper()
     
     # Global check for the Analysis page
     if pathname == "/forklaring":
@@ -456,7 +467,7 @@ def sync_data(n_clicks, selected_muni):
             # Path from your latest message
             excel_path = "data/faaborg&midtfyn/Forbrugsoplysninger FM.xlsx"
             rearrange_carbon_data(excel_path)
-            return f"Faaborg Synced! ✅ ({n_clicks})"
+            return f"Faaborg-Midtfyn Synced! ✅ ({n_clicks})"
 
         elif selected_muni == "frederiksberg":
             muni_cfg = mapping["frederiksberg"]
