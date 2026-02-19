@@ -1,5 +1,7 @@
 import dash
+import os
 from dash import dcc, html, Input, Output, State, clientside_callback
+from flask import session
 from plots import *
 from data_processing import rearrange_carbon_data
 from data_processing_fbr import *
@@ -24,6 +26,8 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 server = app.server
+app.server.secret_key = os.environ.get('SECRET_KEY', 'koprip-dev-secret-change-in-prod')
+PASSWORD = os.environ.get('APP_PASSWORD', 'koprip2024')
 
 # Simplified index string - no inline JS to crash the renderer
 app.index_string = '''
@@ -46,6 +50,91 @@ app.index_string = '''
 </html>
 '''
 
+# --- LOGIN LAYOUT ---
+login_layout = html.Div(
+    style={
+        "minHeight": "100vh",
+        "backgroundColor": "#f8fafc",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "padding": "16px",
+        "fontFamily": "Inter, sans-serif"
+    },
+    children=[
+        html.Div(
+            style={
+                "backgroundColor": "white",
+                "borderRadius": "16px",
+                "boxShadow": "0 20px 60px rgba(0,0,0,0.1)",
+                "border": "1px solid #e2e8f0",
+                "padding": "40px",
+                "width": "100%",
+                "maxWidth": "380px"
+            },
+            children=[
+                # Logo
+                html.Div(
+                    style={"display": "flex", "alignItems": "center", "gap": "12px", "marginBottom": "8px", "justifyContent": "center"},
+                    children=[
+                        html.Span("analytics", className="material-icons-round", style={"color": "#6366f1", "fontSize": "32px"}),
+                        html.Div([
+                            html.H2("KOPRIP", style={"fontSize": "22px", "fontWeight": "800", "letterSpacing": "0.05em", "textTransform": "uppercase", "margin": "0", "color": "#0f172a"}),
+                            html.P("Kommunernes Prioriterings Platform", style={"fontSize": "11px", "color": "#94a3b8", "margin": "0", "letterSpacing": "0.05em"})
+                        ])
+                    ]
+                ),
+                html.P("Begrænset adgang — kun autoriserede brugere.", style={"textAlign": "center", "fontSize": "12px", "color": "#94a3b8", "marginBottom": "32px", "marginTop": "6px"}),
+
+                # Password field
+                html.Label("Adgangskode", style={"fontSize": "11px", "fontWeight": "700", "color": "#64748b", "textTransform": "uppercase", "letterSpacing": "0.08em", "display": "block", "marginBottom": "8px"}),
+                dcc.Input(
+                    id="login-password",
+                    type="password",
+                    placeholder="Indtast adgangskode...",
+                    n_submit=0,
+                    style={
+                        "width": "100%",
+                        "padding": "10px 14px",
+                        "border": "1px solid #e2e8f0",
+                        "borderRadius": "8px",
+                        "fontSize": "14px",
+                        "outline": "none",
+                        "marginBottom": "12px",
+                        "display": "block",
+                        "boxSizing": "border-box",
+                        "fontFamily": "Inter, sans-serif",
+                        "color": "#0f172a"
+                    }
+                ),
+
+                # Login button
+                html.Button(
+                    "Log ind →",
+                    id="login-btn",
+                    style={
+                        "width": "100%",
+                        "padding": "11px",
+                        "backgroundColor": "#4f46e5",
+                        "color": "white",
+                        "border": "none",
+                        "borderRadius": "8px",
+                        "cursor": "pointer",
+                        "fontWeight": "600",
+                        "fontSize": "14px",
+                        "fontFamily": "Inter, sans-serif",
+                        "letterSpacing": "0.02em"
+                    }
+                ),
+
+                # Error message
+                html.Div(id="login-error", style={"marginTop": "14px", "color": "#ef4444", "fontSize": "13px", "textAlign": "center", "minHeight": "20px"})
+            ]
+        )
+    ]
+)
+
+
 # --- UI COMPONENTS ---
 
 def create_sidebar():
@@ -61,7 +150,7 @@ def create_sidebar():
                         html.P("Kommunernes Prioriterings Platform", className="text-xs text-gray-400 tracking-wide")
                     ])
                 ]),
-                
+
                 html.Div(className="space-y-6", children=[
                     html.Div([
                         html.Label("Vælg kommune", className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3 block"),
@@ -78,13 +167,13 @@ def create_sidebar():
                             searchable=True,
                             style={
                                 "backgroundColor": "transparent",
-                                "color": "#1e293b", # Dark text for visibility when box is open
+                                "color": "#1e293b",
                                 "border": "none",
                             },
                             className="text-sm custom-dropdown"
                         )
                     ]),
-                    
+
                     html.Nav(className="space-y-1", children=[
                         dcc.Link(
                             id="link-overblik",
@@ -114,41 +203,41 @@ def create_sidebar():
     )
 
 
-# --- UPDATED APP LAYOUT ---
-app.layout = html.Div(className="flex min-h-screen", children=[
-    dcc.Location(id="url", refresh=False), # CRITICAL: This was missing
-    create_sidebar(),
-    
-    # --- UPDATED HEADER IN APP.LAYOUT ---
-    html.Main(className="flex-1 lg:p-8 p-4 bg-background-light dark:bg-background-dark min-h-screen", children=[
-        # Main Header Area
-        html.Div(className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4", children=[
-            html.Div([
-                html.H2(id="muni-header", className="text-3xl font-extrabold text-slate-800 dark:text-white uppercase tracking-tight")
-            ]),
-            
-            # Action Buttons + Theme Toggle (Top Right)
-            html.Div(className="flex items-center gap-3", children=[
-                # NEW: Theme Toggle placed here
-                html.Button(id="theme-toggle", className="p-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 transition-colors", children=[
-                    html.Span("dark_mode", className="material-icons-round block dark:hidden"),
-                    html.Span("light_mode", className="material-icons-round hidden dark:block")
+# --- SERVE LAYOUT (called on every page load — checks session) ---
+def serve_layout():
+    if session.get('authenticated'):
+        return html.Div(className="flex min-h-screen", children=[
+            dcc.Location(id="url", refresh=False),
+            create_sidebar(),
+            html.Main(className="flex-1 lg:p-8 p-4 bg-background-light dark:bg-background-dark min-h-screen", children=[
+                html.Div(className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4", children=[
+                    html.Div([
+                        html.H2(id="muni-header", className="text-3xl font-extrabold text-slate-800 dark:text-white uppercase tracking-tight")
+                    ]),
+                    html.Div(className="flex items-center gap-3", children=[
+                        html.Button(id="theme-toggle", className="p-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 transition-colors", children=[
+                            html.Span("dark_mode", className="material-icons-round block dark:hidden"),
+                            html.Span("light_mode", className="material-icons-round hidden dark:block")
+                        ]),
+                        html.Button("Eksportér PDF", id="btn-pdf", className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors"),
+                        html.Button("Opdater Data (Sync JSON)", id="sync-button", className="px-4 py-2 bg-blue-500 text-white rounded"),
+                        html.Button("Log ud", id="logout-btn", className="px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"),
+                    ])
                 ]),
-                
-                html.Button("Eksportér PDF", id="btn-pdf", className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors"),
-
-                
-                html.Button("Opdater Data (Sync JSON)", id="sync-button", className="px-4 py-2 bg-blue-500 text-white rounded")
+                html.Div(id="dashboard-content", className="flex flex-col gap-8 w-full pb-20"),
+                html.Div(id="dummy-output", style={"display": "none"})
             ])
-        ]),
-        
-        # Grid for Dashboards
-        html.Div(id="dashboard-content", className="flex flex-col gap-8 w-full pb-20"),
-        
-        # Hidden dummy outputs
-        html.Div(id="dummy-output", style={"display": "none"})
+        ])
+
+    # Not authenticated — show login page
+    return html.Div([
+        dcc.Location(id="url", refresh=False),
+        login_layout
     ])
-])
+
+
+app.layout = serve_layout
+
 
 # --- DANISH DASHBOARD CARD FACTORY ---
 def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None):
@@ -158,21 +247,21 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
             html.H3(title, className="font-bold text-slate-800 dark:text-slate-100 uppercase text-sm tracking-widest"),
             html.Span("analytics", className="material-icons-round text-primary text-lg")
         ]),
-        
+
         # Indhold
         html.Div(className="p-8 flex flex-col lg:flex-row gap-8", children=[
             # Graf-område
             html.Div(className="w-full lg:w-3/4 h-[500px] bg-slate-50 dark:bg-slate-900 rounded-xl relative border border-slate-100 dark:border-slate-800", children=[
                 plot if plot is not None else html.Div("Data indlæses...", className="flex items-center justify-center h-full text-slate-400")
             ]),
-            
+
             # Info Sidebar
             html.Div(className="w-full lg:w-1/4 flex flex-col justify-between py-2", children=[
                 html.Div([
                     html.Label("BESKRIVELSE", className="text-[10px] font-black text-slate-400 uppercase tracking-tighter mb-2 block"),
                     html.P(desc, className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6"),
                 ]),
-                
+
                 # KPI Blokke
                 html.Div(className="grid grid-cols-1 gap-4 p-4 bg-slate-50 dark:bg-slate-700/30 rounded-lg", children=[
                     html.Div([
@@ -188,11 +277,39 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
         ])
     ])
 
+
+# --- AUTH CALLBACKS ---
+
+@app.callback(
+    Output('login-error', 'children'),
+    Output('url', 'href'),
+    Input('login-btn', 'n_clicks'),
+    Input('login-password', 'n_submit'),
+    State('login-password', 'value'),
+    prevent_initial_call=True
+)
+def handle_login(n_clicks, n_submit, password):
+    if password == PASSWORD:
+        session['authenticated'] = True
+        return '', '/'
+    return 'Forkert adgangskode. Prøv igen.', dash.no_update
+
+
+@app.callback(
+    Output('url', 'href', allow_duplicate=True),
+    Input('logout-btn', 'n_clicks'),
+    prevent_initial_call=True
+)
+def handle_logout(n_clicks):
+    session.clear()
+    return '/'
+
+
 # --- DANISH CALLBACK ---
 @app.callback(
-    [Output("muni-header", "children"), 
+    [Output("muni-header", "children"),
      Output("dashboard-content", "children")],
-    [Input("url", "pathname"), 
+    [Input("url", "pathname"),
      Input("muni-selector", "value"),
      Input("dummy-output", "children")]
 )
@@ -205,7 +322,7 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
     }
     display_name = muni_display_names.get(muni_value, muni_value)
     header_text = f"{display_name} KOMMUNE".upper()
-    
+
     # Global check for the Analysis page
     if pathname == "/forklaring":
         if muni_value == "randers":
@@ -220,21 +337,19 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
 
     # --- MODE 1: RANDERS ---
     if muni_value == "randers":
-        # Generate Randers specific figures
         fig_roi = create_roi_matrix(muni_value)
         fig_char = create_building_characteristics(muni_value)
-
         map_html = create_randers_map()
 
         return header_text, [
             make_card(
                 "ROI Matrix: Strategisk Prioritering",
                 "Denne matrix prioriterer energiprojekter baseret på forholdet mellem CO2-besparelse og investeringsomkostning. Brug scatter-plottet til at identificere de projekter, der giver størst klimaeffekt pr. investeret krone — scroll for at zoome i data.",
-                "KOMMUNE", "RANDERS", 
-                "STATUS", "VERIFICERET", 
+                "KOMMUNE", "RANDERS",
+                "STATUS", "VERIFICERET",
                 plot=dcc.Graph(
                     id={'type': 'dynamic-graph', 'index': 1},
-                    figure=fig_roi, 
+                    figure=fig_roi,
                     config={'displayModeBar': True, 'scrollZoom': True, 'responsive': True},
                     style={'height': '100%', 'width': '100%'}
                 )
@@ -242,38 +357,36 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
             make_card(
                 "Bygningsmasse: Karakteristika",
                 "Oversigt over kommunens ejendomsportefølje fordelt på opførelsesår og energimærkeklasse. Diagrammet afslører mønstre i bygningsstanden og hjælper med at målrette renoveringsindsatsen mod de mest energitunge segmenter.",
-                "BYGNINGER", "TOTAL OVERSIGT", 
-                "ANALYSE", "KLAR", 
+                "BYGNINGER", "TOTAL OVERSIGT",
+                "ANALYSE", "KLAR",
                 plot=dcc.Graph(
                     id={'type': 'dynamic-graph', 'index': 2},
-                    figure=fig_char, 
+                    figure=fig_char,
                     config={'displayModeBar': True, 'scrollZoom': True, 'responsive': True},
                     style={'height': '100%', 'width': '100%'}
                 )
             ),
-
             make_card(
                 "Ventilation Status Kort",
                 "Geografisk overblik over ventilationsanlæg med kritiske fejl og vedligeholdelsesbehov baseret på Timesafe-data. Kortet gør det muligt hurtigt at lokalisere problemområder og planlægge service-indsatsen effektivt.",
-                "KILDE", "TIMESAFE", 
-                "REGION", "RANDERS", 
+                "KILDE", "TIMESAFE",
+                "REGION", "RANDERS",
                 plot=html.Iframe(
                     id="randers-ventilation-map",
                     srcDoc=map_html,
                     style={
-                        "width": "100%", 
-                        "height": "500px", # Matches the height of your other graphs
+                        "width": "100%",
+                        "height": "500px",
                         "border": "none",
                         "border-radius": "8px"
                     }
                 )
             )
-            
         ]
 
     # --- MODE 2: FAABORG-MIDTFYN ---
     elif muni_value == "faaborg":
-        
+
         res2 = create_faaborg_energy_performance(muni_value)
         fig2_bar, fig2_detail = res2
 
@@ -284,12 +397,10 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
         if fig2_bar and hasattr(fig2_bar, 'data') and len(fig2_bar.data) > 0:
             building_list = list(fig2_bar.data[0].y)
 
-        # 3. Build UI
         if not building_list:
             db2_display = html.Div("Ingen data fundet i 'Beregnede forbrug Domutech' arket.", className="p-10 text-red-500")
         else:
             db2_display = html.Div([
-                # Dropdown
                 html.Div(className="mb-4", children=[
                     html.Label("Vælg Adresse:", className="text-xs font-bold text-gray-500 mb-2 block"),
                     dcc.Dropdown(
@@ -299,39 +410,33 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
                         className="w-full"
                     ),
                 ]),
-
-                # Split View
                 html.Div(className="flex flex-col lg:flex-row gap-4", children=[
-                    # LEFT SIDE: The Scrollable Container
                     html.Div(
                         style={
-                            'flex': '1', 
-                            'height': '650px', 
-                            'overflow-y': 'auto', # Changed to auto for better scrollbar behavior
-                            'border': '1px solid #e2e8f0', 
+                            'flex': '1',
+                            'height': '650px',
+                            'overflow-y': 'auto',
+                            'border': '1px solid #e2e8f0',
                             'border-radius': '8px',
-                            'padding': '0px', # Ensure no internal padding shifts the chart
+                            'padding': '0px',
                             'display': 'block'
-                        }, 
+                        },
                         children=[
                             dcc.Graph(
-                                id="db2-bar-chart", 
-                                figure=fig2_bar, 
+                                id="db2-bar-chart",
+                                figure=fig2_bar,
                                 config={'displayModeBar': False},
-                                # Remove any default style padding/margin from the Graph object itself
-                                style={'margin': '0', 'padding': '0'} 
+                                style={'margin': '0', 'padding': '0'}
                             )
                         ]
                     ),
-                    
-                    # RIGHT SIDE: Fixed Breakdown
                     html.Div(
                         style={
-                            'flex': '1', 
-                            'height': '600px', 
-                            'border': '1px solid #e2e8f0', 
+                            'flex': '1',
+                            'height': '600px',
+                            'border': '1px solid #e2e8f0',
                             'border-radius': '8px'
-                        }, 
+                        },
                         children=[
                             dcc.Graph(id="db2-trend-graph", figure=fig2_detail)
                         ]
@@ -339,14 +444,13 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
                 ])
             ])
 
-
         return header_text, [
             make_card(
                 "Forbrug & Bæredygtighed",
                 "Sammenligner faktisk energiforbrug med det forventede forbrug ifølge bygningernes energimærker. Det røde område synliggør de 'skjulte omkostninger', hvor bygninger bruger markant mere energi end deres mærkning indikerer.",
-                "ADRESSER", "170+", 
-                "STATUS", "KLAR", 
-                plot=db2_display # PASS THE COMBINED DIV HERE
+                "ADRESSER", "170+",
+                "STATUS", "KLAR",
+                plot=db2_display
             ),
             make_card(
                 "Indkøb & Prisfølsomhed",
@@ -361,50 +465,48 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
                 plot=dcc.Graph(figure=fig6, style={'height': '500px'})
             )
         ]
-    # --- Frederiksberg --- 
+
+    # --- Frederiksberg ---
     elif muni_value == "frederiksberg":
-        # Load mapping locally within the function to avoid NameError
         with open('mapping.json', 'r', encoding='utf-8') as f:
             mapping = json.load(f)
-            
+
         muni_cfg = mapping.get("frederiksberg")
         folder = muni_cfg["folder"]
         files = muni_cfg["files"]
 
         return header_text, [
-            #html.Div(className="grid grid-cols-1 md:grid-cols-2 gap-6", children=[
                 make_card(
                     "Vedligeholdelsesplan", "Oversigt over det 10-årige vedligeholdelsesbudget baseret på Dalux-data. Planen fordeler investeringsbehovet over tid og synliggør, hvornår de største udgiftsposter falder.",
-                    "TYPE", "DALUX", "PRIORITET", "HØJ", # Added missing 2
+                    "TYPE", "DALUX", "PRIORITET", "HØJ",
                     plot=dcc.Graph(figure=create_frb_maintenance_budget())
                 ),
                 make_card(
                     "Potentiale", "Scatter-plot der viser forholdet mellem investeringsomkostning (DKK) og CO2-reduktion for hvert potentielt projekt. Bruges til at identificere de mest omkostningseffektive klimaindsatser i porteføljen.",
-                    "UNIT", "TONS", "STATUS", "ANALYSERET", # Added missing 2
+                    "UNIT", "TONS", "STATUS", "ANALYSERET",
                     plot=dcc.Graph(figure=create_frb_project_scatter())
                 ),
                 make_card(
                     "Portefølje Analyse", "Analyse af kommunens bygningsportefølje med energimærkeklasse plottet mod byggeår. Visualiseringen afslører sammenhængen mellem bygningsalder og energiperformance og peger på renoveringspotentialet.",
-                    "KILDE", "ESG", "BYGNINGER", "ALLE", # Added missing 2
+                    "KILDE", "ESG", "BYGNINGER", "ALLE",
                     plot=dcc.Graph(figure=create_frb_property_characteristics())
                 ),
                 make_card(
                     "Risiko Heatmap", "Heatmap der krydser bygningernes fysiske tilstand med deres vedligeholdelsesomkostninger. Gør det muligt at prioritere indsatsen mod bygninger med høj risiko — dårlig tilstand kombineret med stigende omkostninger.",
-                    "LEVEL", "GRAD 1 (GOD) - 5 (Kritisk)", "RISIKO", "SYNLIG", # Added missing 2
+                    "LEVEL", "GRAD 1 (GOD) - 5 (Kritisk)", "RISIKO", "SYNLIG",
                     plot=dcc.Graph(figure=create_frb_risk_heatmap())
                 ),
                 make_card(
                     "ROI Bubble", "Bubble-diagram der visualiserer investeringens størrelse mod tilbagebetalingstiden (TBT) for hvert projekt. Større bobler indikerer højere investeringsbeløb, og placeringen afslører hvilke projekter der hurtigst tjener sig hjem.",
-                    "FOCUS", "ROI", "OPTIMAL", "JA", # Added missing 2
+                    "FOCUS", "ROI", "OPTIMAL", "JA",
                     plot=dcc.Graph(figure=create_frb_roi_chart())
                 )
-                
-            #])
         ]
 
     # --- DEFAULT / FALLBACK ---
     else:
         return header_text, html.Div("Vælg en kommune for at se data.", className="p-20 text-center text-slate-400")
+
 
 @app.callback(
     [Output("link-overblik", "className"),
@@ -412,17 +514,13 @@ def update_dynamic_content(pathname, muni_value, theme_trigger):
     [Input("url", "pathname")]
 )
 def update_sidebar_shading(pathname):
-    # This is the 'inactive' look: gray text, no background
     inactive = "w-full flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors"
-    
-    # This is the 'active' look: indigo background with bold purple text
     active = "w-full flex items-center gap-3 px-3 py-2 text-primary font-semibold bg-indigo-50 dark:bg-indigo-900/20 rounded-lg shadow-sm"
-    
-    # Logic: if URL is /analyse, highlight Forklaringr. Otherwise highlight Overblik.
     if pathname == "/forklaring":
         return inactive, active
     else:
         return active, inactive
+
 
 @app.callback(
     Output("db2-trend-graph", "figure"),
@@ -430,29 +528,22 @@ def update_sidebar_shading(pathname):
     [State("muni-selector", "value")]
 )
 def update_trend_on_selection(selected_address, muni):
-    # If no address is selected or we aren't in Faaborg, return empty
     if not selected_address or muni != "faaborg":
         return go.Figure()
-    
-    # We call the function again, but this time we pass the 'selected_address'
-    # The '_' ignores the bar chart (since we don't need to re-render that)
     _, fig_trend = create_faaborg_energy_performance(muni, selected_address=selected_address)
-    
     return fig_trend
-
 
 
 @app.callback(
     Output("sync-button", "children"),
     Input("sync-button", "n_clicks"),
-    State("muni-selector", "value"), # We need to know which muni is active
+    State("muni-selector", "value"),
     prevent_initial_call=True
 )
 def sync_data(n_clicks, selected_muni):
     if not selected_muni:
         return "Vælg kommune først! ⚠️"
 
-    # Load mapping to get paths
     with open('mapping.json', 'r', encoding='utf-8') as f:
         mapping = json.load(f)
 
@@ -460,19 +551,16 @@ def sync_data(n_clicks, selected_muni):
         if selected_muni == "randers":
             timesafe_path = "data/randers/TIMESAFE-Export-Ventilationsanlæg.txt"
             buildings_path = "data/randers/Dalux/Alle_bygninger_DaluxFM_20251114_1159_6838.xlsx"
-
             process_randers_map_data(timesafe_path, buildings_path)
             return f"Randers Synced! ({n_clicks})"
-            
+
         elif selected_muni == "faaborg":
-            # Path from your latest message
             excel_path = "data/faaborg&midtfyn/Forbrugsoplysninger FM.xlsx"
             rearrange_carbon_data(excel_path)
             return f"Faaborg-Midtfyn Synced! ✅ ({n_clicks})"
 
         elif selected_muni == "frederiksberg":
             muni_cfg = mapping["frederiksberg"]
-            # Runs the Frederiksberg logic using the folder and file map
             process_frederiksberg_data(muni_cfg["folder"], muni_cfg["files"])
             return f"Frb. Synced! ✅ ({n_clicks})"
 
