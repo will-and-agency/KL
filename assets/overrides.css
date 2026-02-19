@@ -1,0 +1,59 @@
+/* ============================================================
+   Plotly / Tailwind Conflict Fixes
+   Tailwind's preflight resets SVGs and buttons globally,
+   which breaks Plotly's modebar icons and controls.
+   ============================================================ */
+
+/* Fix: Tailwind sets svg { display: block } which breaks modebar icons */
+.modebar svg,
+.modebar-btn svg,
+.modebar-group svg {
+    display: inline-block !important;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+/* Fix: Tailwind button reset breaks modebar button appearance */
+.modebar-btn {
+    padding: 3px 4px !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 0 !important; /* hide any text fallback */
+    line-height: 1 !important;
+}
+
+.modebar-btn:hover {
+    background: rgba(0, 0, 0, 0.07) !important;
+    border-radius: 3px !important;
+}
+
+/* Fix: Modebar container layout */
+.modebar-container {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.modebar-group {
+    display: flex !important;
+    align-items: center !important;
+    border-right: 1px solid #e2e8f0 !important;
+    padding: 0 2px !important;
+}
+
+.modebar-group:last-child {
+    border-right: none !important;
+}
+
+/* Fix: Plotly's internal font size resets from Tailwind typography plugin */
+.gtitle, .xtitle, .ytitle, .g-xtitle, .g-ytitle {
+    font-family: Inter, sans-serif !important;
+}
+
+/* Fix: Ensure Plotly graph containers behave correctly */
+.js-plotly-plot,
+.plot-container,
+.plotly {
+    width: 100% !important;
+}
