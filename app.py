@@ -23,6 +23,7 @@ app = dash.Dash(
     external_stylesheets=external_stylesheets,
     suppress_callback_exceptions=True
 )
+server = app.server
 
 # Simplified index string - no inline JS to crash the renderer
 app.index_string = '''
