@@ -27,7 +27,7 @@ app = dash.Dash(
 )
 server = app.server
 app.server.secret_key = os.environ.get('SECRET_KEY', 'koprip-dev-secret-change-in-prod')
-PASSWORD = os.environ.get('APP_PASSWORD', 'koprip2024')
+PASSWORD = 'koprip2024'
 
 # Simplified index string - no inline JS to crash the renderer
 app.index_string = '''
