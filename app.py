@@ -128,7 +128,11 @@ login_layout = html.Div(
                 ),
 
                 # Error message
-                html.Div(id="login-error", style={"marginTop": "14px", "color": "#ef4444", "fontSize": "13px", "textAlign": "center", "minHeight": "20px"})
+                html.Div(id="login-error", style={"marginTop": "14px", "color": "#ef4444", "fontSize": "13px", "textAlign": "center", "minHeight": "20px"}),
+
+                # Hidden: triggers window.location.reload() via clientside callback
+                dcc.Store(id="login-trigger"),
+                html.Div(id="login-reload-dummy", style={"display": "none"})
             ]
         )
     ]
@@ -225,7 +229,9 @@ def serve_layout():
                     ])
                 ]),
                 html.Div(id="dashboard-content", className="flex flex-col gap-8 w-full pb-20"),
-                html.Div(id="dummy-output", style={"display": "none"})
+                html.Div(id="dummy-output", style={"display": "none"}),
+                dcc.Store(id="logout-trigger"),
+                html.Div(id="logout-reload-dummy", style={"display": "none"})
             ])
         ])
 
@@ -282,7 +288,7 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
 
 @app.callback(
     Output('login-error', 'children'),
-    Output('url', 'href'),
+    Output('login-trigger', 'data'),
     Input('login-btn', 'n_clicks'),
     Input('login-password', 'n_submit'),
     State('login-password', 'value'),
@@ -291,18 +297,36 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
 def handle_login(n_clicks, n_submit, password):
     if password == PASSWORD:
         session['authenticated'] = True
-        return '', '/'
+        return '', True
     return 'Forkert adgangskode. Prøv igen.', dash.no_update
 
 
+# Triggers full page reload after login so serve_layout() re-runs with new session
+app.clientside_callback(
+    "function(t){ if(t === true){ window.location.reload(); } return ''; }",
+    Output('login-reload-dummy', 'children'),
+    Input('login-trigger', 'data'),
+    prevent_initial_call=True
+)
+
+
 @app.callback(
-    Output('url', 'href', allow_duplicate=True),
+    Output('logout-trigger', 'data'),
     Input('logout-btn', 'n_clicks'),
     prevent_initial_call=True
 )
 def handle_logout(n_clicks):
     session.clear()
-    return '/'
+    return True
+
+
+# Triggers full page reload after logout so serve_layout() re-runs with cleared session
+app.clientside_callback(
+    "function(t){ if(t === true){ window.location.reload(); } return ''; }",
+    Output('logout-reload-dummy', 'children'),
+    Input('logout-trigger', 'data'),
+    prevent_initial_call=True
+)
 
 
 # --- DANISH CALLBACK ---
