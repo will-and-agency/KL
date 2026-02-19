@@ -11,6 +11,7 @@ openpyxl==3.1.5
 
 # Visualization
 plotly==5.22.0
+folium
 
 # Utilities
 pyyaml

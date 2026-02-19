@@ -1,6 +1,6 @@
 {
     "randers": {
-        "folder": "D:/W&A/KL/data/randers/Energy Projects",
+        "folder": "data/randers/Energy Projects",
         "roi_data": {
             "file": "Forbedringer.xlsx",
             "sheet": "Forbedringer",
@@ -25,7 +25,7 @@
         }
     },
     "faaborg": {
-        "folder": "D:/W&A/KL/data/faaborg&midtfyn",
+        "folder": "data/faaborg&midtfyn",
         "db2_energy": {
             "file": "Forbrugsoplysninger FM.xlsx",
             "skiprows": 4,
