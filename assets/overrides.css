@@ -57,3 +57,137 @@
 .plotly {
     width: 100% !important;
 }
+
+/* ============================================================
+   Dash Dropdown / React Select — Tailwind Forms Plugin Conflict
+   The forms plugin resets inputs and pseudo-elements, breaking
+   Dash's dropdown control, arrow, search input, and option list.
+   ============================================================ */
+
+/* Restore the dropdown control box */
+.Select-control {
+    display: flex !important;
+    align-items: center !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    background-color: white !important;
+    min-height: 38px !important;
+    cursor: default !important;
+    box-shadow: none !important;
+}
+
+/* Fix: Tailwind forms plugin resets the search input inside the dropdown */
+.Select-input input,
+.Select input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: inherit !important;
+    width: 100% !important;
+}
+
+/* Fix: Dropdown arrow SVG (same svg display: block issue as modebar) */
+.Select-arrow,
+.Select-arrow-zone svg,
+.Select--single .Select-arrow-zone svg {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.Select-arrow-zone {
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 8px !important;
+    cursor: pointer !important;
+}
+
+/* Fix: Selected value text */
+.Select-value,
+.Select-value-label {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 8px !important;
+    font-size: 14px !important;
+    color: #1e293b !important;
+    line-height: 1.5 !important;
+}
+
+/* Fix: Option list / menu */
+.Select-menu-outer {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    background: white !important;
+    z-index: 9999 !important;
+    margin-top: 4px !important;
+}
+
+.Select-option {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    color: #1e293b !important;
+    cursor: pointer !important;
+    background: white !important;
+}
+
+.Select-option.is-focused {
+    background: #f1f5f9 !important;
+}
+
+.Select-option.is-selected {
+    background: #eef2ff !important;
+    color: #4f46e5 !important;
+    font-weight: 500 !important;
+}
+
+/* Fix: Placeholder text */
+.Select-placeholder {
+    padding: 0 8px !important;
+    font-size: 14px !important;
+    color: #94a3b8 !important;
+    line-height: 38px !important;
+}
+
+/* Fix: Clear "x" button */
+.Select-clear-zone {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 4px !important;
+    cursor: pointer !important;
+    color: #94a3b8 !important;
+}
+
+/* Dark mode support */
+.dark .Select-control {
+    background-color: #1f2937 !important;
+    border-color: #374151 !important;
+}
+
+.dark .Select-value-label,
+.dark .Select-placeholder {
+    color: #e2e8f0 !important;
+}
+
+.dark .Select-menu-outer {
+    background: #1f2937 !important;
+    border-color: #374151 !important;
+}
+
+.dark .Select-option {
+    background: #1f2937 !important;
+    color: #e2e8f0 !important;
+}
+
+.dark .Select-option.is-focused {
+    background: #374151 !important;
+}
+
+.dark .Select-option.is-selected {
+    background: #312e81 !important;
+    color: #a5b4fc !important;
+}
