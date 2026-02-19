@@ -1,7 +1,6 @@
 import dash
 import os
 from dash import dcc, html, Input, Output, State, clientside_callback
-from flask import session
 from plots import *
 from data_processing import rearrange_carbon_data
 from data_processing_fbr import *
@@ -26,7 +25,6 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 server = app.server
-app.server.secret_key = os.environ.get('SECRET_KEY', 'koprip-dev-secret-change-in-prod')
 PASSWORD = 'koprip2024'
 
 # Simplified index string - no inline JS to crash the renderer
@@ -128,11 +126,7 @@ login_layout = html.Div(
                 ),
 
                 # Error message
-                html.Div(id="login-error", style={"marginTop": "14px", "color": "#ef4444", "fontSize": "13px", "textAlign": "center", "minHeight": "20px"}),
-
-                # Hidden: triggers window.location.reload() via clientside callback
-                dcc.Store(id="login-trigger"),
-                html.Div(id="login-reload-dummy", style={"display": "none"})
+                html.Div(id="login-error", style={"marginTop": "14px", "color": "#ef4444", "fontSize": "13px", "textAlign": "center", "minHeight": "20px"})
             ]
         )
     ]
@@ -207,42 +201,50 @@ def create_sidebar():
     )
 
 
-# --- SERVE LAYOUT (called on every page load — checks session) ---
+# --- BASE LAYOUT (always the same — auth state lives in sessionStorage via dcc.Store) ---
 def serve_layout():
-    if session.get('authenticated'):
-        return html.Div(className="flex min-h-screen", children=[
-            dcc.Location(id="url", refresh=False),
-            create_sidebar(),
-            html.Main(className="flex-1 lg:p-8 p-4 bg-background-light dark:bg-background-dark min-h-screen", children=[
-                html.Div(className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4", children=[
-                    html.Div([
-                        html.H2(id="muni-header", className="text-3xl font-extrabold text-slate-800 dark:text-white uppercase tracking-tight")
-                    ]),
-                    html.Div(className="flex items-center gap-3", children=[
-                        html.Button(id="theme-toggle", className="p-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 transition-colors", children=[
-                            html.Span("dark_mode", className="material-icons-round block dark:hidden"),
-                            html.Span("light_mode", className="material-icons-round hidden dark:block")
-                        ]),
-                        html.Button("Eksportér PDF", id="btn-pdf", className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors"),
-                        html.Button("Opdater Data (Sync JSON)", id="sync-button", className="px-4 py-2 bg-blue-500 text-white rounded"),
-                        html.Button("Log ud", id="logout-btn", className="px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"),
-                    ])
-                ]),
-                html.Div(id="dashboard-content", className="flex flex-col gap-8 w-full pb-20"),
-                html.Div(id="dummy-output", style={"display": "none"}),
-                dcc.Store(id="logout-trigger"),
-                html.Div(id="logout-reload-dummy", style={"display": "none"})
-            ])
-        ])
-
-    # Not authenticated — show login page
     return html.Div([
         dcc.Location(id="url", refresh=False),
-        login_layout
+        dcc.Store(id='auth-store', storage_type='session'),
+        html.Div(id='page-container')
+    ])
+
+
+def create_dashboard_layout():
+    return html.Div(className="flex min-h-screen", children=[
+        create_sidebar(),
+        html.Main(className="flex-1 lg:p-8 p-4 bg-background-light dark:bg-background-dark min-h-screen", children=[
+            html.Div(className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4", children=[
+                html.Div([
+                    html.H2(id="muni-header", className="text-3xl font-extrabold text-slate-800 dark:text-white uppercase tracking-tight")
+                ]),
+                html.Div(className="flex items-center gap-3", children=[
+                    html.Button(id="theme-toggle", className="p-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-slate-600 dark:text-slate-300 shadow-sm hover:bg-slate-50 transition-colors", children=[
+                        html.Span("dark_mode", className="material-icons-round block dark:hidden"),
+                        html.Span("light_mode", className="material-icons-round hidden dark:block")
+                    ]),
+                    html.Button("Eksportér PDF", id="btn-pdf", className="px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors"),
+                    html.Button("Opdater Data (Sync JSON)", id="sync-button", className="px-4 py-2 bg-blue-500 text-white rounded"),
+                    html.Button("Log ud", id="logout-btn", className="px-4 py-2 bg-slate-100 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"),
+                ])
+            ]),
+            html.Div(id="dashboard-content", className="flex flex-col gap-8 w-full pb-20"),
+            html.Div(id="dummy-output", style={"display": "none"}),
+        ])
     ])
 
 
 app.layout = serve_layout
+
+
+@app.callback(
+    Output('page-container', 'children'),
+    Input('auth-store', 'data')
+)
+def render_page(auth_data):
+    if auth_data and auth_data.get('authenticated'):
+        return create_dashboard_layout()
+    return login_layout
 
 
 # --- DANISH DASHBOARD CARD FACTORY ---
@@ -287,8 +289,8 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
 # --- AUTH CALLBACKS ---
 
 @app.callback(
+    Output('auth-store', 'data'),
     Output('login-error', 'children'),
-    Output('login-trigger', 'data'),
     Input('login-btn', 'n_clicks'),
     Input('login-password', 'n_submit'),
     State('login-password', 'value'),
@@ -296,37 +298,17 @@ def make_card(title, desc, kpi1_label, kpi1_val, kpi2_label, kpi2_val, plot=None
 )
 def handle_login(n_clicks, n_submit, password):
     if password == PASSWORD:
-        session['authenticated'] = True
-        return '', True
-    return 'Forkert adgangskode. Prøv igen.', dash.no_update
-
-
-# Triggers full page reload after login so serve_layout() re-runs with new session
-app.clientside_callback(
-    "function(t){ if(t === true){ window.location.reload(); } return ''; }",
-    Output('login-reload-dummy', 'children'),
-    Input('login-trigger', 'data'),
-    prevent_initial_call=True
-)
+        return {'authenticated': True}, ''
+    return dash.no_update, 'Forkert adgangskode. Prøv igen.'
 
 
 @app.callback(
-    Output('logout-trigger', 'data'),
+    Output('auth-store', 'data', allow_duplicate=True),
     Input('logout-btn', 'n_clicks'),
     prevent_initial_call=True
 )
 def handle_logout(n_clicks):
-    session.clear()
-    return True
-
-
-# Triggers full page reload after logout so serve_layout() re-runs with cleared session
-app.clientside_callback(
-    "function(t){ if(t === true){ window.location.reload(); } return ''; }",
-    Output('logout-reload-dummy', 'children'),
-    Input('logout-trigger', 'data'),
-    prevent_initial_call=True
-)
+    return None
 
 
 # --- DANISH CALLBACK ---
